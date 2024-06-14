@@ -1,0 +1,30 @@
+﻿@model App_Web.Models.Brand
+
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="card mb-4">
+    <h6 class="card-header">Tạo thương hiệu</h6>
+    <div class="card-body">
+        <div class="col-md-4">
+            <form method="post" action="/Admin/Brands/Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="BrandName" class="control-label"></label>
+                    <input asp-for="BrandName" class="form-control" />
+                    <span asp-validation-for="BrandName" class="text-danger"></span>
+                </div>
+                <div class="form-group justify-content-center text-center">
+                    <button type="reset" class="btn btn-primary">Hủy bỏ</button>
+                    <button type="submit" class="btn btn-success">Tạo</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <div class="card-body">
+        <a href="/Admin/Brands" class="btn btn-info">Trở về danh sách</a>
+    </div>
+</div>
+

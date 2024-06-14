@@ -1,0 +1,91 @@
+﻿@model App_Web.Models.RegisterViewModel
+@{
+    Layout = null;
+}
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+<style>
+    .card-container {
+        position: absolute;
+        width:900px;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    body{
+        background-color: #fbfbfb;
+    }
+</style>
+<div class="container">
+    <div class="card card-container">
+    <div class="card-body">
+        <form id="registerForm" href="/register?returnUrl=@ViewData["ReturnUrl"]" method="post" class="form-horizontal" role="form">
+            @Html.ValidationSummary(true)
+            <div class="container">
+                <h4>Đăng kí tài khoản</h4>
+                <a href="/Home/Index" class="btn btn-success">Trở về trang chủ</a>
+                <hr />
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                            <div class="form-group" style="height:85px;">
+                            <label asp-for="Email" class="control-label"></label>
+                            <input asp-for="Email" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Password" class="control-label"></label>
+                            <input asp-for="Password" id="password" type="password" class="form-control" />
+                            <span id="passwordError" class="text-danger"></span>
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                            <div class="form-group" style="height:85px;">
+                            <label asp-for="FullName" class="control-label"></label>
+                            <input asp-for="FullName" class="form-control" />
+                            <span asp-validation-for="FullName" class="text-danger form-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="ConfirmPassword" class="control-label"></label>
+                            <input asp-for="ConfirmPassword" type="password" class="form-control" />
+                            <span asp-validation-for="ConfirmPassword" class="text-danger form-message"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group mt-3 pb-2">
+                    <div class="col-md-offset-2 pr-2 ">
+                        <button type="submit" class="btn btn-primary">Đăng kí</button>
+                        </div>
+                    </div>
+                    <p>
+                        <a href="/login?returnUrl=@ViewData["ReturnUrl"]">Trở về đăng nhập </a>
+                    </p>
+
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+
+<script>
+    document.getElementById("registerForm").addEventListener("submit", function (event) {
+        var password = document.getElementById("password").value;
+        var regex = /^{8,}$/;
+        var errorMessage = "Password ít nhất 8 kí tự";
+
+        if (!regex.test(password)) {
+            document.getElementById("passwordError").textContent = errorMessage;
+            event.preventDefault();
+        } else {
+            document.getElementById("passwordError").textContent = "";
+        }
+    });
+</script>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

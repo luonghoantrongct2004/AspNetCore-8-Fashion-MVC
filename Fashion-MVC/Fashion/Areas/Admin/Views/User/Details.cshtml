@@ -1,0 +1,37 @@
+﻿@model App_Web.Models.User
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h3 class="p-2">Chi tiết người dùng</h3>
+
+<div class="table-responsive">
+    <table class="table table-striped table-condensed">
+        <tbody>
+            <tr>
+                <th class="text-center">No. </th>
+                <td class="text-center">@Model.UserID</td>
+            </tr>
+            <tr>
+                <th class="text-center">Họ tên</th>
+                <td class="text-center">@Model.FullName</td>
+            </tr>
+            <tr>
+                <th class="text-center">Email</th>
+                <td class="text-center">@Model.Email</td>
+            </tr>
+            <tr>
+                <th class="text-center">Vai trò </th>
+                @if (Model.Role != null)
+                {
+                    <td class="text-center">@Model.Role.Name</td>
+                }
+            </tr>
+        </tbody>
+    </table>
+    <div class="text-center" style="padding-left:30rem;">
+        <a href="/Admin/User/" class="btn btn-primary">Trở về danh sách</a>
+    </div>
+</div>
+

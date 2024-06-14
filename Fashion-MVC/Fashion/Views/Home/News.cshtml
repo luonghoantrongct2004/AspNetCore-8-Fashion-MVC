@@ -1,0 +1,32 @@
+﻿@model IEnumerable<App_Web.Models.News>
+<link rel="stylesheet" type="text/css" href="~/assets/css/new.css" asp-append-version="true">
+<div class="grid wide" style="margin-top: 115px;">
+    <div class="main__taskbar">
+        <div class="main__breadcrumb">
+            <div class="breadcrumb__item">
+                <a href="/Home" class="breadcrumb__link">Trang chủ</a>
+            </div>
+            <div class="breadcrumb__item">
+                <a href="/Home/News" class="breadcrumb__link">Danh sách tin tức</a>
+            </div>
+        </div>
+    </div>
+    <div class="list-new">
+        @foreach(var item in Model){
+        <div href="@item.Author" class="new-item">
+            <a href="#" class="new-item__img">
+                <img src="@item.Image.First()" alt="" width="291px" height="291px">
+            </a>
+            <div class="new-item__body">
+                <a href="#" class="new-item__title">
+                   @item.Title
+                </a>
+                <p class="new-item__time"> Ngày đăng: @item.PublishedAt</p>
+                <p class="new-item__description">
+                    @item.Content
+                </p>
+            </div>
+        </div>
+        }
+    </div>
+</div>

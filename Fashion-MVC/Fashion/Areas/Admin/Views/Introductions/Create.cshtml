@@ -1,0 +1,52 @@
+﻿@model App_Web.Models.Introduction
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h3 class="p-2">Tạo giới thiệu</h3>
+<hr />
+<div class="card mb-1">
+    <div class="card-body">
+        <form action="/Admin/Introductions/Create" enctype="multipart/form-data" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                <label asp-for="Title" class="control-label">Tên giới thiệu</label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+                <div class="form-group col-md-6">
+                <label asp-for="Description" class="control-label">Mô Tả</label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                <label asp-for="ImageUrl" class="control-label">Ảnh</label>
+                <input asp-for="ImageUrl" type="file" class="form-control" name="files" required />
+                <span asp-validation-for="ImageUrl" class="text-danger"></span>
+            </div>
+                <div class="form-group col-md-6">
+                <label asp-for="CreatedAt" class="control-label">Ngày Tạo</label>
+                    <input asp-for="CreatedAt" class="form-control" value="@DateTime.Now.ToString("yyyy-MM-ddTHH:mm:ss")" readonly />
+                <span asp-validation-for="CreatedAt" class="text-danger"></span>
+            </div>
+            </div>
+            <div class="form-group justify-content-center text-center pt-4 pl-2">
+                 <button type="submit" class="btn btn-success">Tạo</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <a href="/Admin/Introductions" class="btn btn-info">Quay Lại Danh Sách</a>
+    </div>
+</div>
+

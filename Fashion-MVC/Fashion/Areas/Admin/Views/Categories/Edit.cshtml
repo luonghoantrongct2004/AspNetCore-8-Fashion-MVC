@@ -1,0 +1,27 @@
+﻿@model App_Web.Models.Category
+
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1 class="p-2">Chỉnh sửa danh mục @Model.CategoryName</h1>
+
+<div class="card mb-4">
+    <h6 class="card-header">Chỉnh sửa danh mục @Model.CategoryName</h6>
+    <div class="card-body">
+        <form action="/Admin/Categories/Edit" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="CategoryId" />
+            <input type="hidden" value="@Model.CategoryId" name="id" />
+            <div class="form-group">
+                <label asp-for="CategoryName" class="control-label">Tên danh mục</label>
+                <input asp-for="CategoryName" class="form-control" />
+                <span asp-validation-for="CategoryName" class="text-danger"></span>
+            </div>
+            <div class="form-group justify-content-center text-center">
+                <a href="/Admin/Categories/Index" class="btn btn-info">Trở về danh sách</a>
+                <button type="submit" value="Lưu lại" class="btn btn-success">Lưu lại</button>
+            </div>
+        </form>
+    </div>
+</div>

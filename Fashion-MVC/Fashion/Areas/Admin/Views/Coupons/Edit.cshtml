@@ -1,0 +1,35 @@
+﻿@model App_Web.Models.Coupon
+
+@{
+    ViewData["Title"] = "Chỉnh sửa mã giảm giá " + Model.CouponCode;
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="card mb-4">
+    <h6 class="card-header">Chỉnh sửa mã giảm giá @Model.CouponCode</h6>
+    <div class="card-body">
+        <form method="post" action="/Admin/Coupons/Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="CouponId" />
+            <input type="hidden" value="@Model.CouponId" name="id" />
+            <div class="form-group">
+                <label asp-for="CouponCode" class="control-label">Mã giảm giá</label>
+                <input asp-for="CouponCode" class="form-control" />
+                <span asp-validation-for="CouponCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DiscountAmount" class="control-label">Số tiền giảm</label>
+                <input asp-for="DiscountAmount" class="form-control" />
+                <span asp-validation-for="DiscountAmount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MinAmount" class="control-label">Giá tối thiểu</label>
+                <input asp-for="MinAmount" class="form-control" />
+                <span asp-validation-for="MinAmount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <button type="submit" value="Save" class="btn btn-success">Lưu lại</button>
+                <a href="/Admin/Coupons" class="btn btn-info">Quay lại danh sách</a>
+            </div>
+        </form>
+    </div>
+</div>

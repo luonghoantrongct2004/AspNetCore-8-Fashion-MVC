@@ -1,0 +1,230 @@
+﻿@model List<App_Web.Models.Product>
+@{
+    var userIdClaim = Context.User.Claims.FirstOrDefault(c => c.Type == "UserID");
+}
+<link rel="stylesheet" href="~/assets/css/index.css" asp-append-version="true" />
+<div class="main">
+    <!-- Slider -->
+    <div class="main__slice">
+        <div class="slider">
+            <div class="slide active">
+                <img src="~/assets/img/slider/slide-4.jpg" asp-append-version="true" />
+                <div class="container">
+                    <div class="caption">
+                        <h1>Fashion' New - Every Day</h1>
+                        <p>TRENDING BEACH ESSENTIALS</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="~/assets/img/slider/slide-5.jpg" asp-append-version="true" />
+                <div class="container">
+                    <div class="caption">
+                        <h1>Dress' Luxurious</h1>
+                        <p >TOPS Spring - Summer</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="~/assets/img/slider/slide-6.jpg" asp-append-version="true" />
+                <div class="container">
+                    <div class="caption">
+                        <h1>Up to - For you</h1>
+                        <p >SITEWIDE 90% OFF</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- controls  -->
+        <div class="controls">
+            <div class="prev">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="next">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+        <!-- indicators -->
+        <div class="indicator">
+        </div>
+    </div>
+    <!--Product Category -->
+    <div class="main__tabnine">
+        <div class="grid wide">
+            <!-- Tab items -->
+            <div class="tabs">
+                <div class="tab-item active">
+                    Bán Chạy
+                </div>
+                <div class="tab-item">
+                    Giá tốt
+                </div>
+                <div class="tab-item">
+                    Mới Nhập
+                </div>
+                <div class="line"></div>
+            </div>
+            <!-- Tab content -->
+            <div class="tab-content">
+                <div class="tab-pane active">
+                    <div class="row">
+                        @foreach (var item in Model.Take(20))
+                        {
+                            <div class="col l-2 m-4 s-6">
+                                @{
+                                    decimal originalPrice = item.Price;
+                                    int discountPercentage = item.Discount.HasValue ? item.Discount.Value : 0;
+                                    decimal discountedPrice = originalPrice - (originalPrice * discountPercentage / 100);
+                                }
+                                <div class="product">
+                                    <div>
+                                        @if (item.Images != null)
+                                        {
+                                            <img src="@item.Images.First()" style="width:181px;height:181px;">
+                                        }
+                                    </div>
+                                    <div class="product__info">
+                                        <h3 class="product__name">@item.ProductName</h3>
+                                        <div class="product__price">
+                                            <div class="price__old">@String.Format("{0:N0}", item.Price)</div>
+                                            <div class="price__new">@discountedPrice.ToString("N0") <span class="price__unit">đ</span></div>
+                                        </div>
+                                        @if (item.Discount > 0)
+                                        {
+                                            <div class="product__sale">
+                                                <span class="product__sale-percent">@item.Discount%</span>
+                                                <span class="product__sale-text">Giảm</span>
+                                            </div>
+                                        }
+                                    </div>
+                                    <a asp-controller="Home" asp-action="Details" asp-route-id="@item.ProductId" class="viewDetail">Xem chi tiết</a>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div class="tab-pane">
+                    <div class="row">
+                        @foreach (var item in Model.Take(20))
+                        {
+                            <div class="col l-2 m-4 s-6">
+                                @{
+                                    decimal originalPrice = item.Price;
+                                    int discountPercentage = item.Discount.HasValue ? item.Discount.Value : 0;
+                                    decimal discountedPrice = originalPrice - (originalPrice * discountPercentage / 100);
+                                }
+                                <div class="product">
+                                    <div>
+                                        @if (item.Images != null)
+                                        {
+                                            <img src="@item.Images.First()" style="width:181px;height:181px;">
+                                        }
+                                    </div>
+                                    <div class="product__info">
+                                        <h3 class="product__name">@item.ProductName</h3>
+                                        <div class="product__price">
+                                            <div class="price__old">@String.Format("{0:N0}", item.Price)</div>
+                                            <div class="price__new">@discountedPrice.ToString("N0") <span class="price__unit">đ</span></div>
+                                        </div>
+                                        @if (item.Discount > 0)
+                                        {
+                                            <div class="product__sale">
+                                                <span class="product__sale-percent">@item.Discount%</span>
+                                                <span class="product__sale-text">Giảm</span>
+                                            </div>
+                                        }
+                                    </div>
+                                    <a asp-controller="Home" asp-action="Details" asp-route-id="@item.ProductId" class="viewDetail">Xem chi tiết</a>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div class="tab-pane">
+                    <div class="row">
+                        @foreach (var item in Model.Take(20))
+                        {
+                            <div class="col l-2 m-4 s-6">
+                                @{
+                                    decimal originalPrice = item.Price;
+                                    int discountPercentage = item.Discount.HasValue ? item.Discount.Value : 0;
+                                    decimal discountedPrice = originalPrice - (originalPrice * discountPercentage / 100);
+                                }
+                                <div class="product">
+                                    <div>
+                                        @if (item.Images != null)
+                                        {
+                                            <img src="@item.Images.First()" style="width:181px;height:181px;">
+                                        }
+                                    </div>
+                                    <div class="product__info">
+                                        <h3 class="product__name">@item.ProductName</h3>
+                                        <div class="product__price">
+                                            <div class="price__old">@String.Format("{0:N0}", item.Price)</div>
+                                            <div class="price__new">@discountedPrice.ToString("N0") <span class="price__unit">đ</span></div>
+                                        </div>
+                                        @if (item.Discount > 0)
+                                        {
+                                            <div class="product__sale">
+                                                <span class="product__sale-percent">@item.Discount%</span>
+                                                <span class="product__sale-text">Giảm</span>
+                                            </div>
+                                        }
+                                    </div>
+                                    <a asp-controller="Home" asp-action="Details" asp-route-id="@item.ProductId" class="viewDetail">Xem chi tiết</a>
+                                   
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HightLight  -->
+    <div class="main__frame">
+        <div class="grid wide">
+            <h3 class="category__title">Fashion</h3>
+            <h3 class="category__heading">SẢN PHẨM NỔI BẬT</h3>
+            <div class="owl-carousel hight owl-theme">
+                @foreach (var item in Model)
+                {
+                    <div class="product">
+                        @{
+                            decimal originalPrice = item.Price;
+                            int discountPercentage = item.Discount.HasValue ? item.Discount.Value : 0;
+                            decimal discountedPrice = originalPrice - (originalPrice * discountPercentage / 100);
+                        }
+                        <div>
+                            @if (item.Images != null)
+                            {
+                                <img src="@item.Images.First()" style="width:181px;height:181px;">
+                            }
+                        </div>
+                        <div class="product__info">
+                            <h3 class="product__name">@item.ProductName</h3>
+                            <div class="product__price">
+                                <div class="price__old">
+                                    @String.Format("{0:N0}", item.Price)
+                                </div>
+                                <div class="price__new"> @discountedPrice.ToString("N0")<span class="price__unit">đ</span></div>
+                            </div>
+                            @if (item.Discount > 0)
+                            {
+                                <div class="product__sale">
+                                    <span class="product__sale-percent">@item.Discount%</span>
+                                    <span class="product__sale-text">Giảm</span>
+                                </div>
+                            }
+                        </div>
+                        <a asp-controller="Home" asp-action="Details" asp-route-id="@item.ProductId" class="viewDetail">Xem chi tiết</a>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

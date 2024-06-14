@@ -1,0 +1,52 @@
+﻿@model App_Web.Models.News
+
+@{
+    ViewData["Title"] = "Tạo bài viết";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h3 class="p-2">Tạo tin tức</h3>
+
+<div class="card mb-1">
+    <div class="card-body">
+        <form action="/Admin/News/Create" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="Content" class="control-label">Nội dung</label>
+                    <textarea asp-for="Content" class="form-control" rows="1"></textarea>
+                    <span asp-validation-for="Content" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                <label asp-for="Author" class="control-label"></label>
+                    <input asp-for="Author" class="form-control" value="@ViewBag.Fullname" readonly />
+                <span asp-validation-for="Author" class="text-danger"></span>
+            </div>
+                <div class="form-group col-md-6">
+                <label asp-for="Image" class="control-label"></label>
+                <input asp-for="Image" type="file" class="form-control" name="files" required/>
+                <span asp-validation-for="Image" class="text-danger"></span>
+            </div>
+            </div>
+            <div class="form-group">
+                 <button type="submit" class="btn btn-success">Tạo</button>
+                <input type="reset" value="Xóa hết" class="btn btn-warning" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div class="card">
+    <div class="card-body">
+        <a class="btn btn-info" href="/Admin/News">Quay lại danh sách</a>
+    </div>
+</div>

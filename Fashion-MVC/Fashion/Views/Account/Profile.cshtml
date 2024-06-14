@@ -1,0 +1,152 @@
+﻿@model App_Web.Models.ViewModel.UserProfileViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var userIdClaim = Context.User.Claims.FirstOrDefault(c => c.Type == "UserID");
+}
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+    }
+
+        body a, body #test {
+            color: black;
+        }
+
+    .card {
+        border: 0;
+    }
+
+    a {
+        font-size: revert;
+        color: black;
+        text-decoration: none;
+        color: inherit;
+    }
+
+        a:hover {
+            text-decoration: none;
+            color: black;
+        }
+
+    .container {
+        padding-top: 115px;
+    }
+
+    th, td {
+        text-align: center;
+        vertical-align: middle !important;
+        font-size: 18px;
+    }
+
+    .table-striped tbody tr:nth-of-type(odd) {
+        background-color: #edf0ff;
+    }
+
+    .card-body {
+        flex: 1 1 auto;
+        padding: 1rem 1rem;
+    }
+
+    .product-info {
+        flex: 1;
+    }
+
+    .product-image img {
+        width: 81.6px;
+        height: 81.6px;
+    }
+
+    .product-details {
+        margin-top: 25px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+</style>
+<div>
+    @using (Html.BeginForm("Profile", "Account", FormMethod.Post))
+    {
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-2 mb-4" style="margin-top: 18px;">
+                    <div style="text-align: center;">
+                        <img src="~/user.jpg" width="50px" height="50px" style="border-radius: 50%;" />
+                        <a href="">@Model.FullName</a>
+                    </div>
+                    <div style="margin: 22px;">
+                        <a href="/Account/Profile?id=@userIdClaim.Value"><i class="fas fas-user"></i> Tài khoản của tôi</a>
+                    </div>
+                    <div style="margin: 22px;">
+                        <a href="/Home/DetailOrders?id=@userIdClaim.Value"><i class="fas fas-complain"></i> Đơn hàng</a>
+                    </div>
+                </div>
+
+                <div class="col-md-10 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <input type="hidden" name="UserID" value="@userIdClaim.Value" />
+                                <div class="col-12 col-sm-12 mb-3">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label for="FullName" style="font-size: 1.6rem;">Họ và tên</label>
+                                                <input class="form-control" name="FullName" id="FullName" type="text" placeholder="Họ và tên" style="font-size: 1.6rem;" value="@Model.FullName">
+                                                <span asp-validation-for="FullName" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label for="Email" style="font-size: 1.6rem;">Email</label>
+                                                <input class="form-control" name="Email" id="Email" type="email" placeholder="Email của bạn" style="font-size: 1.6rem;" value="@Model.Email">
+                                                <span asp-validation-for="Email" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div class="mb-2" style="font-size: 1.8rem;"><b>Đổi mật khẩu</b></div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label for="CurrentPassword" style="font-size: 1.6rem;">Mật khẩu hiện tại</label>
+                                                <input class="form-control" name="CurrentPassword" id="CurrentPassword" type="password" placeholder="Nhập mật khẩu hiện tại" style="font-size: 1.6rem;" required>
+                                                <span asp-validation-for="CurrentPassword" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label for="NewPassword" style="font-size: 1.6rem;">Mật khẩu mới</label>
+                                                <input class="form-control" name="NewPassword" id="NewPassword" type="password" placeholder="Nhập mật khẩu mới" style="font-size: 1.6rem;" value="@Model.NewPassword" required>
+                                                <span asp-validation-for="NewPassword" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label for="ConfirmPassword" style="font-size: 1.6rem;">Nhập lại <span class="d-none d-xl-inline">mật khẩu</span></label>
+                                                <input class="form-control" name="ConfirmPassword" id="ConfirmPassword" type="password" placeholder="Xác nhận mật khẩu" style="font-size: 1.6rem;" value="@Model.ConfirmPassword" required>
+                                                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col d-flex justify-content-end">
+                                <button style="font-size: 1.6rem;" class="btn btn-primary" type="submit">Lưu lại</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+

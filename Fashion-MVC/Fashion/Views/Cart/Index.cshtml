@@ -1,0 +1,366 @@
+﻿@model App_Web.Models.ViewModel.CartViewModel
+@{
+    var userIdClaim = Context.User.Claims.FirstOrDefault(c => c.Type == "UserID");
+}
+<link rel="stylesheet" href="~/assets/owlCarousel/assets/owl.theme.default.min.css">
+<link rel="stylesheet" asp-append-version="true" type="text/css" href="~/assets/css/cart.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<style>
+    .main {
+        background-color: #eff6fc;
+    }
+</style>
+<div class="grid wide main" style="padding-top: 120px;">
+    <div class="row">
+        <div class="col l-9 m-12 s-12">
+            <div class="main__cart">
+                <div class="row title">
+                    
+                    <div class="col l-1 m-1 s-0">Chọn</div>
+                    <div class="col l-4 m-4 s-8">Sản phẩm</div>
+                    <div class="col l-2 m-2 s-0">Giá</div>
+                    <div class="col l-2 m-2 s-0">Số lượng</div>
+                    <div class="col l-2 m-2 s-4">Tổng</div>
+                    <div class="col l-1 m-1 s-0">Xóa</div>
+                </div>
+                @foreach (var item in Model.CartItems)
+                {
+                    <div class="row item">
+                        <div class="col l-1 m-1 s-0">
+                            <input type="checkbox" name="check" data-productid="@item.ProductId" data-totalprice="@item.TotalPrice" class="product-checkbox">
+                        </div>
+                        <div class="col l-4 m-4 s-8">
+                            <div class="main__cart-product">
+                                <img src="@item.Image.First()" alt="">
+                                <div class="name"><a style="color:black" href="/Home/Details?id=@item.ProductId">@item.ProductName</a>
+                                    <div>
+                                        <select name="selectSize">
+                                            <option selected value="@item.Size">@item.Size</option>
+                                            <option value="M">M</option>
+                                            <option value="L">L</option>
+                                            <option value="XL">XL</option>
+                                            <option value="2XL">2XL</option>
+                                            <option value="3XL">3XL</option>
+                                        </select>
+                                        <select name="selectColor">
+                                            <option selected value="@item.Color">@item.Color</option>
+                                            <option value="Trắng">Trắng</option>
+                                            <option value="Đen">Đen</option>
+                                            <option value="Xám">Xám</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col l-2 m-2 s-0">
+                            <div class="main__cart-price">@item.UnitPrice.ToString("N0") đ</div>
+                        </div>
+                        <div class="col l-2 m-2 s-0">
+                            <div class="buttons_added">
+                                <form method="post" action="/Cart/UpdateQuantity">
+                                    <input type="hidden" name="productId" value="@item.ProductId">
+                                    <button type="submit" name="action" value="decrease" class="minus is-form">-</button>
+                                    <input aria-label="quantity" class="input-qty" data-quantity="@item.Quantity" id="quantity_@item.ProductId" min="1" name="quantity" type="number" value="@item.Quantity">
+                                    <button type="submit" name="action" value="increase" class="plus is-form">+</button>
+                                </form>
+
+                            </div>
+                        </div>
+                        <div class="col l-2 m-1 s-2">
+                            <div class="main__cart-price totalpriceMain">@item.TotalPrice.ToString("N0")  đ</div>
+                        </div>
+                        <div class="col l-1 m-1 s-0">
+                                <button type="submit" class="btn order-close col-md-5" style="margin:0;" value="@item.CartDetailsId">
+                                    <span class="main__cart-icon">
+                                        <i class="far fa-times-circle"></i>
+                                    </span>
+                                </button>
+                        </div>
+                        </div>
+                }
+            </div>
+        </div>
+
+        <div class="col l-3 m-12 s-12">
+            <div class="main__pay">
+                <div class="main__pay-title">Tổng số lượng</div>
+                <div class="pay-info">
+                    <div class="main__pay-text">
+                        Tổng phụ
+                    </div>
+                    <div class="main__pay-price" >@Model.TotalPriceLast.ToString("N0") ₫</div>
+                </div>
+                <div class="pay-info">
+                    <div class="main__pay-text">
+                        Giao hàng
+                    </div>
+                    <div class="main__pay-text">
+                        Giao hàng miễn phí
+                    </div>
+                </div>
+                <form id="formCoupon">
+                    <div class="form-group">
+                        <label for="couponId" class="main__pay-title">Phiếu ưu đãi</label>
+                        <select class="form-control" name="couponId" style="background-color: aliceblue;">
+                            <option value="0">Chọn phiếu giảm giá</option>
+                            @foreach (var coupon in Model.Coupons)
+                            {
+                                <option value="@coupon.CouponId">@coupon.CouponCode</option>
+                            }
+                        </select>
+                    </div>
+                    <button type="button" id="apply-btn" class="btn btn--default">Áp dụng</button>
+                </form>
+                <div class="form-group">
+                    <select class="form-control" name="paymentId" style="background-color: aliceblue;">
+                        <option value="0">Chọn phương thức thanh toán</option>
+                        <option value="1">Thanh toán khi nhận hàng</option>
+                        <option value="2">Thanh toán bằng visa hoặc master card</option>
+                    </select>
+                </div>
+                <div class="pay-info">
+                    <div class="main__pay-text">
+                        Tổng thành tiền
+                    </div>
+                    <input type="hidden" id="totalPriceLast" value="@Model.TotalPrice.ToString("N0")" />
+                        @{
+                            if (Model.TotalPrice > 0)
+                            {
+                                     <div class="main__pay-price" id="totalPrice">
+                                     @Model.TotalPrice.ToString("N0") đ
+                                    </div>
+                            }else{
+                                    <div class="main__pay-price" id="totalPrice">
+                                       0 đ
+                                    </div>
+                            }
+                        }
+                </div>
+                <a href="" class="btn btn--default orange" id="checkout-btn">Tiến hành thanh toán</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('#apply-btn').click(function () {
+            var couponId = $('select[name="couponId"]').val();
+
+            var totalPriceString = $('#totalPriceLast').val(); // Lấy giá trị totalPrice từ phần tử có id là 'totalPrice'
+            var totalPrice = Number.parseInt(totalPriceString.replace(/[^0-9-]/g, '')); // Loại bỏ tất cả các ký tự ngoại trừ số, dấu chấm và dấu trừ
+            $.ajax({
+                url: '/Cart/ApplyCoupon',
+                method: 'POST',
+                data: { couponId: couponId, totalPrice: totalPrice },
+                success: function (response) {
+                    if (response.success) {
+                        $('#totalPrice').text(response.totalPrice.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' }));
+                    } else {
+                        alert("Không thể thêm mã giảm giá");
+                    }
+                },
+                error: function (xhr, status, error) {
+                    console.error(error);
+                }
+            });
+        });
+    });
+    // Thêm sự kiện click cho các checkbox
+    document.querySelectorAll('input[name="check"]').forEach(function (checkbox) {
+        checkbox.addEventListener('click', function () {
+            // Gọi hàm để tính tổng giá tiền khi có sự thay đổi trong checkbox
+            calculateTotalPrice();
+        });
+    });
+
+    function calculateTotalPrice() {
+        var totalPrice = 0;
+
+        // Lặp qua tất cả các checkbox
+        document.querySelectorAll('input[name="check"]').forEach(function (checkbox) {
+            // Nếu checkbox được chọn
+            if (checkbox.checked) {
+                // Lấy ra phần tử cha chứa thông tin về sản phẩm
+                var parentRow = checkbox.closest('.row.item');
+                if (parentRow) {
+                    // Lấy giá tiền từ phần tử cha
+                    var priceStringElement = parentRow.querySelector('.totalpriceMain');
+                    if (priceStringElement) {
+                        var priceString = priceStringElement.innerText.trim();
+                        // Lấy số tiền từ chuỗi giá tiền
+                        var price = parseInt(priceString.replace(/\D/g, ''));
+                        var productId = checkbox.getAttribute('data-productid'); // Lấy id của sản phẩm
+                        totalPrice += price ;
+                    }
+                }
+            }
+        });
+        totalPrice -= @Model.CouponDiscountAmount;
+
+        // Hiển thị tổng giá tiền
+        document.getElementById('totalPrice').innerText = totalPrice < 0 ? "0" : totalPrice.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+        document.getElementById('totalPriceLast').value = totalPrice < 0 ? "0" : totalPrice.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+
+    }
+
+</script>
+
+<script>
+    var buttonClicked = false;
+
+    document.getElementById('checkout-btn').addEventListener('click', function (event) {
+        event.preventDefault();
+
+        var paymentId = $('select[name="paymentId"]').val();
+        var selectedProductIds = [];
+        document.querySelectorAll('.product-checkbox:checked').forEach(function (checkbox) {
+            selectedProductIds.push(checkbox.getAttribute('data-productid'));
+        });
+
+        if (selectedProductIds.length > 0) {
+            buttonClicked = true; 
+            sendSelectedProducts(selectedProductIds);
+        } else {
+            // Nếu không có sản phẩm nào được chọn, chuyển hướng người dùng đến trang Checkout/Index
+            window.location.href = "/Checkout/Index?paymentId=" + paymentId;
+        }
+    });
+
+    function sendSelectedProducts(selectedProductIds) {
+        if (!buttonClicked) {
+            return;
+        }
+
+        var userId = @userIdClaim.Value;
+        var couponId = $('select[name="couponId"]').val();
+        var paymentId = $('select[name="paymentId"]').val();
+        var selectSize = $('select[name="selectSize"]').val();
+        var selectColor = $('select[name="selectColor"]').val();
+        if (!totalPrice) {
+            // Nếu không có totalPrice được truyền vào, tính toán lại từ các sản phẩm được chọn và giảm giá từ coupon
+            var totalPrice = 0;
+            var products = []; // Mảng chứa thông tin sản phẩm
+
+            document.querySelectorAll('.product-checkbox:checked').forEach(function (checkbox) {
+                var parentRow = checkbox.closest('.row.item');
+                var priceString = parentRow.querySelector('.totalpriceMain').innerText.trim();
+                var price = parseInt(priceString.replace(/\D/g, ''));
+                var productId = checkbox.getAttribute('data-productid'); // Lấy id của sản phẩm
+                var quantityInput = document.getElementById('quantity_' + productId); // Lấy input số lượng tương ứng
+                var quantity = parseInt(quantityInput.value); // Lấy giá trị của input số lượng
+                totalPrice += price * quantity; // Tính tổng giá trị dựa trên số lượng sản phẩm
+
+                // Thêm thông tin sản phẩm vào mảng
+                products.push({
+                    productId: productId,
+                    quantity: quantity,
+                    color: selectColor,
+                    size: selectSize
+                });
+            });
+            totalPrice -= @Model.CouponDiscountAmount;
+        } 
+        var totalPriceString = $('#totalPrice').text(); // Lấy giá trị totalPrice từ phần tử có id là 'totalPrice'
+        totalPrice = Number.parseInt(totalPriceString.replace(/[^0-9-]/g, ''));
+        // Tiếp tục xử lý với totalPrice đã được xác định
+        var data = {
+            userId: userId,
+            totalPrice:totalPrice,
+            products: products,
+            couponId: couponId,
+            PaymentId: paymentId,
+            color: selectColor,
+            size: selectSize
+        };
+        fetch('/Checkout/Buy', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        }).then(response => {
+            if (response.ok) {
+                return response.json(); // Trả về dữ liệu JSON từ server nếu thành công
+            }
+            throw new Error('Network response was not ok.');
+        }).then(data => {
+            if (data.success) {
+                window.location.href = data.redirectUrl; // Chuyển hướng đến trang Checkout/Index
+            } else {
+                alert(data.message); // Hiển thị thông báo lỗi nếu có
+            }
+        }).catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+        });
+    }
+
+
+    document.querySelectorAll('.product-checkbox').forEach(function (checkbox) {
+        checkbox.addEventListener('click', function () {
+            var selectedProductIds = [];
+            document.querySelectorAll('.product-checkbox:checked').forEach(function (checkbox) {
+                selectedProductIds.push(checkbox.getAttribute('data-productid'));
+            });
+            if (selectedProductIds.length > 0) {
+                buttonClicked = false;
+                sendSelectedProducts(selectedProductIds);
+            }
+        });
+    });
+    window.addEventListener('load', function () {
+        buttonClicked = false;
+    });
+</script>
+
+
+
+<script>
+    document.querySelectorAll('.minus, .plus').forEach(function (btn) {
+        btn.addEventListener('click', function (event) {
+            event.preventDefault();
+
+            var form = this.closest('form');
+            var input = form.querySelector('.input-qty');
+            var currentValue = parseInt(input.value);
+            var action = this.getAttribute('value');
+
+            if (action === 'decrease') {
+                currentValue = currentValue - 1 < 1 ? 1 : currentValue - 1;
+            } else {
+                currentValue += 1;
+            }
+
+            input.value = currentValue;
+            form.submit();
+        });
+    });
+</script>
+<script>
+    var selectedCouponId = '@Model.CouponId';
+    if (selectedCouponId) {
+        var selectElement = document.querySelector('select[name="couponId"]');
+        var optionElement = selectElement.querySelector('option[value="' + selectedCouponId + '"]');
+        if (optionElement) {
+            optionElement.setAttribute('selected', 'selected');
+        }
+    }
+</script>
+<script>
+    $(document).on("click", ".order-close", function (e) {
+        e.preventDefault();
+        var cartDetailId = $(this).val();
+        $.ajax({
+            url: "/Home/RemoveItemCart",
+            type: "POST",
+            data: { cartDetailId: cartDetailId },
+            success: function (response) {
+                if (response.success) {
+                    window.location.reload();
+                }
+            }
+        });
+    });
+
+</script>

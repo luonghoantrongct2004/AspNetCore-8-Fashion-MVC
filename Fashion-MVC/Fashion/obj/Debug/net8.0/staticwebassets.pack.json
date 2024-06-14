@@ -1,0 +1,1485 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Fashion.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Fashion.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\css\\bootstrap-material.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\css\\bootstrap-material.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\css\\pages\\authentication.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\css\\pages\\authentication.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\css\\pages\\search.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\css\\pages\\search.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\css\\shreerang-material.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\css\\shreerang-material.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\css\\uikit.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\css\\uikit.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\feather.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\feather.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\feather\\feather.eot",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\feather\\feather.eot"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\feather\\feather.svg",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\feather\\feather.svg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\feather\\feather.ttf",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\feather\\feather.ttf"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\feather\\feather.woff",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\feather\\feather.woff"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\fontawesome.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\fontawesome.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\fontawesome\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\fontawesome\\fa-brands-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\fontawesome\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\fontawesome\\fa-brands-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\fontawesome\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\fontawesome\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\fontawesome\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\fontawesome\\fa-brands-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\fontawesome\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\fontawesome\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\fontawesome\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\fontawesome\\fa-regular-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\fontawesome\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\fontawesome\\fa-regular-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\fontawesome\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\fontawesome\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\fontawesome\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\fontawesome\\fa-regular-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\fontawesome\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\fontawesome\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\fontawesome\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\fontawesome\\fa-solid-900.eot"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\fontawesome\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\fontawesome\\fa-solid-900.svg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\fontawesome\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\fontawesome\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\fontawesome\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\fontawesome\\fa-solid-900.woff"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\fontawesome\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\fontawesome\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\ionicons.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\ionicons.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\ionicons\\ionicons.eot",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\ionicons\\ionicons.eot"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\ionicons\\ionicons.svg",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\ionicons\\ionicons.svg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\ionicons\\ionicons.ttf",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\ionicons\\ionicons.ttf"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\ionicons\\ionicons.woff",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\ionicons\\ionicons.woff"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\ionicons\\ionicons.woff2",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\ionicons\\ionicons.woff2"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\linearicons.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\linearicons.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\linearicons\\Linearicons-Free.eot",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\linearicons\\Linearicons-Free.eot"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\linearicons\\Linearicons-Free.svg",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\linearicons\\Linearicons-Free.svg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\linearicons\\Linearicons-Free.ttf",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\linearicons\\Linearicons-Free.ttf"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\linearicons\\Linearicons-Free.woff",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\linearicons\\Linearicons-Free.woff"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\linearicons\\Linearicons-Free.woff2",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\linearicons\\Linearicons-Free.woff2"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\open-iconic.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\open-iconic.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\open-iconic\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\open-iconic\\open-iconic.eot"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\open-iconic\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\open-iconic\\open-iconic.otf"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\open-iconic\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\open-iconic\\open-iconic.svg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\open-iconic\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\open-iconic\\open-iconic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\open-iconic\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\open-iconic\\open-iconic.woff"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\pe-icon-7-stroke.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\pe-icon-7-stroke.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\pe-icon-7-stroke\\Pe-icon-7-stroke.eot",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\pe-icon-7-stroke\\Pe-icon-7-stroke.eot"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\pe-icon-7-stroke\\Pe-icon-7-stroke.svg",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\pe-icon-7-stroke\\Pe-icon-7-stroke.svg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\pe-icon-7-stroke\\Pe-icon-7-stroke.ttf",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\pe-icon-7-stroke\\Pe-icon-7-stroke.ttf"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\fonts\\pe-icon-7-stroke\\Pe-icon-7-stroke.woff",
+      "PackagePath": "staticwebassets\\assetsAdmin\\fonts\\pe-icon-7-stroke\\Pe-icon-7-stroke.woff"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\img\\favicon.ico",
+      "PackagePath": "staticwebassets\\assetsAdmin\\img\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\img\\logo.png",
+      "PackagePath": "staticwebassets\\assetsAdmin\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\js\\analytics.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\analytics.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\js\\demo.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\demo.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\js\\dropdown-hover.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\dropdown-hover.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\js\\jquery-3.2.1.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\jquery-3.2.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\js\\jquery-3.3.1.min.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\jquery-3.3.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\js\\layout-helpers.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\layout-helpers.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\js\\material-ripple.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\material-ripple.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\js\\mega-dropdown.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\mega-dropdown.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\js\\pace.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\pace.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\js\\pages\\charts_morrisjs.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\pages\\charts_morrisjs.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\js\\pages\\dashboards_index.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\pages\\dashboards_index.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\js\\pages\\forms_input-groups.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\pages\\forms_input-groups.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\js\\pages\\tables_bootstrap-table.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\pages\\tables_bootstrap-table.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\js\\pages\\ui_button-groups.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\pages\\ui_button-groups.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\js\\sidenav.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\js\\sidenav.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\libs\\animate-css\\animate.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\libs\\animate-css\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\libs\\animate-css\\animate.scss",
+      "PackagePath": "staticwebassets\\assetsAdmin\\libs\\animate-css\\animate.scss"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\libs\\chart-am4\\animated.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\libs\\chart-am4\\animated.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\libs\\chart-am4\\charts.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\libs\\chart-am4\\charts.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\libs\\chart-am4\\core.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\libs\\chart-am4\\core.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\libs\\chart-am4\\maps.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\libs\\chart-am4\\maps.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\libs\\chart-am4\\worldLow.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\libs\\chart-am4\\worldLow.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\libs\\chartist\\chartist.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\libs\\chartist\\chartist.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\libs\\chartist\\chartist.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\libs\\chartist\\chartist.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\libs\\chartist\\chartist.scss",
+      "PackagePath": "staticwebassets\\assetsAdmin\\libs\\chartist\\chartist.scss"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\libs\\clipboard\\clipboard.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\libs\\clipboard\\clipboard.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\libs\\eve\\eve.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\libs\\eve\\eve.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\libs\\flot\\curvedLines.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\libs\\flot\\curvedLines.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\libs\\flot\\flot.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\libs\\flot\\flot.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\libs\\flot\\flot.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\libs\\flot\\flot.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\libs\\flot\\flot.scss",
+      "PackagePath": "staticwebassets\\assetsAdmin\\libs\\flot\\flot.scss"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\libs\\flow-js\\flow.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\libs\\flow-js\\flow.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\libs\\flow-js\\flow.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\libs\\flow-js\\flow.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\libs\\flow-js\\flow.scss",
+      "PackagePath": "staticwebassets\\assetsAdmin\\libs\\flow-js\\flow.scss"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\libs\\knob\\knob.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\libs\\knob\\knob.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\libs\\mapael\\mapael.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\libs\\mapael\\mapael.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\libs\\mapael\\maps\\france_departments.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\libs\\mapael\\maps\\france_departments.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\libs\\mapael\\maps\\usa_states.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\libs\\mapael\\maps\\usa_states.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\libs\\mapael\\maps\\world_countries.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\libs\\mapael\\maps\\world_countries.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\libs\\mapael\\maps\\world_countries_mercator.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\libs\\mapael\\maps\\world_countries_mercator.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\libs\\mapael\\maps\\world_countries_miller.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\libs\\mapael\\maps\\world_countries_miller.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\libs\\moment\\moment.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\libs\\moment\\moment.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\libs\\morris\\morris.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\libs\\morris\\morris.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\libs\\morris\\morris.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\libs\\morris\\morris.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\libs\\morris\\morris.scss",
+      "PackagePath": "staticwebassets\\assetsAdmin\\libs\\morris\\morris.scss"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\libs\\numeral\\numeral.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\libs\\numeral\\numeral.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\libs\\perfect-scrollbar\\perfect-scrollbar.css",
+      "PackagePath": "staticwebassets\\assetsAdmin\\libs\\perfect-scrollbar\\perfect-scrollbar.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\libs\\perfect-scrollbar\\perfect-scrollbar.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\libs\\perfect-scrollbar\\perfect-scrollbar.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\libs\\perfect-scrollbar\\perfect-scrollbar.scss",
+      "PackagePath": "staticwebassets\\assetsAdmin\\libs\\perfect-scrollbar\\perfect-scrollbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\libs\\popper\\popper.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\libs\\popper\\popper.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assetsAdmin\\libs\\raphael\\raphael.js",
+      "PackagePath": "staticwebassets\\assetsAdmin\\libs\\raphael\\raphael.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\css\\cart.css",
+      "PackagePath": "staticwebassets\\assets\\css\\cart.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\css\\common.css",
+      "PackagePath": "staticwebassets\\assets\\css\\common.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\css\\contact.css",
+      "PackagePath": "staticwebassets\\assets\\css\\contact.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\css\\home.css",
+      "PackagePath": "staticwebassets\\assets\\css\\home.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\css\\index.css",
+      "PackagePath": "staticwebassets\\assets\\css\\index.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\css\\library.css",
+      "PackagePath": "staticwebassets\\assets\\css\\library.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\css\\new.css",
+      "PackagePath": "staticwebassets\\assets\\css\\new.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\css\\pay.css",
+      "PackagePath": "staticwebassets\\assets\\css\\pay.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\css\\product.css",
+      "PackagePath": "staticwebassets\\assets\\css\\product.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\css\\productSale.css",
+      "PackagePath": "staticwebassets\\assets\\css\\productSale.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\img\\band\\band1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\band\\band1.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\img\\band\\band2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\band\\band2.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\img\\band\\band3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\band\\band3.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\img\\band\\band4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\band\\band4.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\img\\band\\band5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\band\\band5.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\img\\band\\band6.png",
+      "PackagePath": "staticwebassets\\assets\\img\\band\\band6.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\img\\band\\band7.png",
+      "PackagePath": "staticwebassets\\assets\\img\\band\\band7.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\img\\band\\band8.png",
+      "PackagePath": "staticwebassets\\assets\\img\\band\\band8.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\img\\bg\\bg.gif",
+      "PackagePath": "staticwebassets\\assets\\img\\bg\\bg.gif"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\img\\news\\news1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\news\\news1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\img\\news\\news2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\news\\news2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\img\\policy\\policy1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\policy\\policy1.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\img\\policy\\policy2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\policy\\policy2.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\img\\policy\\policy3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\policy\\policy3.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\img\\policy\\policy4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\policy\\policy4.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\img\\product\\product1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\img\\product\\product2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\img\\product\\product3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\img\\product\\product4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\img\\product\\product5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\img\\product\\product6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\product6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\img\\slider\\slide-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\slider\\slide-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\img\\slider\\slide-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\slider\\slide-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\img\\slider\\slide-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\slider\\slide-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\img\\user.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\user.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\js\\commonscript.js",
+      "PackagePath": "staticwebassets\\assets\\js\\commonscript.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\js\\homeScript.js",
+      "PackagePath": "staticwebassets\\assets\\js\\homeScript.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\owlCarousel\\README.md",
+      "PackagePath": "staticwebassets\\assets\\owlCarousel\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\owlCarousel\\assets\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\assets\\owlCarousel\\assets\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\owlCarousel\\assets\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\assets\\owlCarousel\\assets\\owl.carousel.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\owlCarousel\\assets\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\assets\\owlCarousel\\assets\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\owlCarousel\\assets\\owl.theme.default.css",
+      "PackagePath": "staticwebassets\\assets\\owlCarousel\\assets\\owl.theme.default.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\owlCarousel\\assets\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\assets\\owlCarousel\\assets\\owl.theme.default.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\owlCarousel\\assets\\owl.theme.green.css",
+      "PackagePath": "staticwebassets\\assets\\owlCarousel\\assets\\owl.theme.green.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\owlCarousel\\assets\\owl.theme.green.min.css",
+      "PackagePath": "staticwebassets\\assets\\owlCarousel\\assets\\owl.theme.green.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\owlCarousel\\assets\\owl.video.play.png",
+      "PackagePath": "staticwebassets\\assets\\owlCarousel\\assets\\owl.video.play.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\owlCarousel\\owl.carousel.js",
+      "PackagePath": "staticwebassets\\assets\\owlCarousel\\owl.carousel.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\assets\\owlCarousel\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\assets\\owlCarousel\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\css\\alert.css",
+      "PackagePath": "staticwebassets\\css\\alert.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\introductions\\5\\041d75c2-8269-4671-85a1-0781dd13ff9e.png",
+      "PackagePath": "staticwebassets\\images\\introductions\\5\\041d75c2-8269-4671-85a1-0781dd13ff9e.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\news\\0\\061a2e43-f817-437f-a638-ab2183aaf94a.png",
+      "PackagePath": "staticwebassets\\images\\news\\0\\061a2e43-f817-437f-a638-ab2183aaf94a.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\news\\0\\4997c260-4a54-4283-ac7a-cf5748db4037.jpg",
+      "PackagePath": "staticwebassets\\images\\news\\0\\4997c260-4a54-4283-ac7a-cf5748db4037.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\news\\0\\629d98f5-ebdb-4775-ab6d-b2f63d7763a8.jpg",
+      "PackagePath": "staticwebassets\\images\\news\\0\\629d98f5-ebdb-4775-ab6d-b2f63d7763a8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\news\\0\\83b170a3-b80d-4c3f-bf01-9c45068ae4be.png",
+      "PackagePath": "staticwebassets\\images\\news\\0\\83b170a3-b80d-4c3f-bf01-9c45068ae4be.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\news\\0\\ca495597-7d03-46a8-9445-285e13f5b902.webp",
+      "PackagePath": "staticwebassets\\images\\news\\0\\ca495597-7d03-46a8-9445-285e13f5b902.webp"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\news\\0\\e70ef0af-f0b0-42fa-88b4-a61e18824e40.png",
+      "PackagePath": "staticwebassets\\images\\news\\0\\e70ef0af-f0b0-42fa-88b4-a61e18824e40.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\news\\0\\ea5c2cf6-2d57-4a11-a197-4495c33f369f.jpg",
+      "PackagePath": "staticwebassets\\images\\news\\0\\ea5c2cf6-2d57-4a11-a197-4495c33f369f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\news\\1\\541ef8a3-7fd3-4285-acd6-ad0d79fb47c7.png",
+      "PackagePath": "staticwebassets\\images\\news\\1\\541ef8a3-7fd3-4285-acd6-ad0d79fb47c7.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\news\\1\\55e93c53-9135-479d-8c92-9c21dff4cac1.jpg",
+      "PackagePath": "staticwebassets\\images\\news\\1\\55e93c53-9135-479d-8c92-9c21dff4cac1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\news\\1\\bdea7df5-05d1-4781-8bc5-e95cc05100ed.png",
+      "PackagePath": "staticwebassets\\images\\news\\1\\bdea7df5-05d1-4781-8bc5-e95cc05100ed.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\news\\2\\c2b31a32-9fcd-4c33-92ad-ae21c9028357.png",
+      "PackagePath": "staticwebassets\\images\\news\\2\\c2b31a32-9fcd-4c33-92ad-ae21c9028357.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\026b5dc3-47fd-4578-bdd0-134110e7e371.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\026b5dc3-47fd-4578-bdd0-134110e7e371.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\0411fa21-fe2e-46a4-b6e7-bf3d6e353dbf.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\0411fa21-fe2e-46a4-b6e7-bf3d6e353dbf.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\04eef454-dcb1-4719-a7ff-d397d692b96a.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\04eef454-dcb1-4719-a7ff-d397d692b96a.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\06da0cd6-ad5a-4c3c-b77c-6fd339e61663.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\06da0cd6-ad5a-4c3c-b77c-6fd339e61663.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\0b8a33e9-8ed0-4af9-953c-5eb4df128969.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\0b8a33e9-8ed0-4af9-953c-5eb4df128969.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\13deaaa0-aa61-461f-8c13-03ce1417c624.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\13deaaa0-aa61-461f-8c13-03ce1417c624.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\16267e2a-16f6-4c06-a98a-53a9b183293a.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\16267e2a-16f6-4c06-a98a-53a9b183293a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\17a6b57e-4cc3-4da0-95a5-8fd7d36525c9.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\17a6b57e-4cc3-4da0-95a5-8fd7d36525c9.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\200f19c7-4f0b-465b-b86e-697176a9eecf.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\200f19c7-4f0b-465b-b86e-697176a9eecf.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\20aada50-015c-4754-8b25-9298799c3928.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\20aada50-015c-4754-8b25-9298799c3928.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\22acd296-7df2-41d2-8646-c00866db08aa.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\22acd296-7df2-41d2-8646-c00866db08aa.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\24052423-9b9c-4c8d-bf76-08c5f8d00154.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\24052423-9b9c-4c8d-bf76-08c5f8d00154.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\28156b04-4f7e-4da1-8ec8-814801a6980a.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\28156b04-4f7e-4da1-8ec8-814801a6980a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\28379925-50fd-4c09-abd4-a4d5ce83d07c.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\28379925-50fd-4c09-abd4-a4d5ce83d07c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\28ae61a7-47a0-4c86-9460-7e6af0be176b.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\28ae61a7-47a0-4c86-9460-7e6af0be176b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\2da41408-93e0-47c9-b242-98a8bfbf13a7.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\2da41408-93e0-47c9-b242-98a8bfbf13a7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\2db371bc-7972-40e6-a416-71029f1db7f1.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\2db371bc-7972-40e6-a416-71029f1db7f1.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\2df56ef7-8bc0-4552-a901-c415637cda9d.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\2df56ef7-8bc0-4552-a901-c415637cda9d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\2e6cf754-3fc8-4d3b-bb3d-d005929c8eff.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\2e6cf754-3fc8-4d3b-bb3d-d005929c8eff.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\333b0232-1f23-4de6-b764-037f1e32a9c7.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\333b0232-1f23-4de6-b764-037f1e32a9c7.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\335691fe-c17a-4f1b-9681-810ebcd1b14c.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\335691fe-c17a-4f1b-9681-810ebcd1b14c.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\35081ace-8858-4c62-a86b-2234b9d909fd.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\35081ace-8858-4c62-a86b-2234b9d909fd.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\39076550-b8cf-4949-b770-9b9a4ba609ee.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\39076550-b8cf-4949-b770-9b9a4ba609ee.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\391f54a9-bbb5-4fa8-b0f6-3be2f1210382.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\391f54a9-bbb5-4fa8-b0f6-3be2f1210382.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\3d2a34a1-cb33-47e2-9e06-5abfe67e4313.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\3d2a34a1-cb33-47e2-9e06-5abfe67e4313.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\4192b403-3a3a-49f4-8981-89fa3ebb9c7c.gif",
+      "PackagePath": "staticwebassets\\images\\products\\0\\4192b403-3a3a-49f4-8981-89fa3ebb9c7c.gif"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\443233e4-3397-4378-8022-51090a89bff5.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\443233e4-3397-4378-8022-51090a89bff5.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\4478572a-dff8-47c3-ab22-b1ff7900b3e3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\4478572a-dff8-47c3-ab22-b1ff7900b3e3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\4c507252-ce94-40c2-bd7c-7fc02d86a798.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\4c507252-ce94-40c2-bd7c-7fc02d86a798.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\4e4fe623-0796-42ec-a003-f3c232b72e76.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\4e4fe623-0796-42ec-a003-f3c232b72e76.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\4e6ca40a-4ed4-4544-9139-2c9b09dc8e85.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\4e6ca40a-4ed4-4544-9139-2c9b09dc8e85.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\52a31d13-6048-45c8-a6f1-4eea5d69020b.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\52a31d13-6048-45c8-a6f1-4eea5d69020b.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\56824951-d293-4d91-ac6d-3010d81b3a71.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\56824951-d293-4d91-ac6d-3010d81b3a71.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\56b26f1b-cb7e-4bac-ba36-affa0a263a52.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\56b26f1b-cb7e-4bac-ba36-affa0a263a52.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\57b42229-d2ac-4cef-8567-355a859bb1d1.jfif",
+      "PackagePath": "staticwebassets\\images\\products\\0\\57b42229-d2ac-4cef-8567-355a859bb1d1.jfif"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\5db33cac-1f46-4ac3-8e56-db88b50790a2.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\5db33cac-1f46-4ac3-8e56-db88b50790a2.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\5ee3753d-f3e7-4ab1-8c0a-9dc50394dd42.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\5ee3753d-f3e7-4ab1-8c0a-9dc50394dd42.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\6075252c-4ac8-45c3-8e1e-e0cbbabf46e9.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\6075252c-4ac8-45c3-8e1e-e0cbbabf46e9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\6617e8b4-89a5-4bd8-93c2-39ddaa5b40a1.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\6617e8b4-89a5-4bd8-93c2-39ddaa5b40a1.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\683dc3f6-5182-4fb4-b04b-9b81c264f649.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\683dc3f6-5182-4fb4-b04b-9b81c264f649.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\693ea342-7b9e-4684-997e-b64b27d26ff7.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\693ea342-7b9e-4684-997e-b64b27d26ff7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\69ec682b-d7ce-4e34-9d98-e3ed9a041ed7.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\69ec682b-d7ce-4e34-9d98-e3ed9a041ed7.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\6cc37271-715f-4e74-bf8e-f705f420e017.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\6cc37271-715f-4e74-bf8e-f705f420e017.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\6e63a25c-00ce-4139-bf5e-09821ea18d0e.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\6e63a25c-00ce-4139-bf5e-09821ea18d0e.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\6f229ca9-c0d7-468e-84f9-eeed6e4dcc99.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\6f229ca9-c0d7-468e-84f9-eeed6e4dcc99.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\7457d8f8-3f30-40c6-90e8-ef7dbc952581.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\7457d8f8-3f30-40c6-90e8-ef7dbc952581.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\791f98c4-ee42-4071-abd0-0fdec0c2afc5.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\791f98c4-ee42-4071-abd0-0fdec0c2afc5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\7a900afe-2b2f-426a-af38-11e1b566aed7.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\7a900afe-2b2f-426a-af38-11e1b566aed7.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\7db5d638-bb94-4f87-89ab-79bbbbc68d38.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\7db5d638-bb94-4f87-89ab-79bbbbc68d38.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\894ba110-5329-4765-8a2b-f1068ae965a9.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\894ba110-5329-4765-8a2b-f1068ae965a9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\8ba90294-506d-4a9c-b99c-b77ba79eefb8.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\8ba90294-506d-4a9c-b99c-b77ba79eefb8.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\92cee79e-3522-42a4-b155-66599c87a5d0.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\92cee79e-3522-42a4-b155-66599c87a5d0.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\932299dd-0860-4bf0-8850-2b0dc9d5b5e7.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\932299dd-0860-4bf0-8850-2b0dc9d5b5e7.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\939384a1-691c-4eeb-a988-b8cd18fd4db4.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\939384a1-691c-4eeb-a988-b8cd18fd4db4.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\93fa5e02-f9b1-48df-bf52-3e7c6380fcce.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\93fa5e02-f9b1-48df-bf52-3e7c6380fcce.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\9456424f-2b94-494e-98e8-013c7f6e56ca.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\9456424f-2b94-494e-98e8-013c7f6e56ca.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\97420ddf-fa5e-4246-8441-7e21b8ab211f.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\97420ddf-fa5e-4246-8441-7e21b8ab211f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\986945d5-f492-4495-a085-95dd7c6761ca.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\986945d5-f492-4495-a085-95dd7c6761ca.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\9884be4b-667c-440f-a6ab-a53871d8c421.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\9884be4b-667c-440f-a6ab-a53871d8c421.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\9d41b273-3e15-4522-ae39-d0d68bde9426.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\9d41b273-3e15-4522-ae39-d0d68bde9426.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\9ea98215-d1b2-4038-a1a8-ea39d471c36c.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\9ea98215-d1b2-4038-a1a8-ea39d471c36c.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\9f012294-325b-454b-b066-a1ddaf67151b.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\9f012294-325b-454b-b066-a1ddaf67151b.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\a07a34f3-6d4c-406e-a066-d151f74cea59.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\a07a34f3-6d4c-406e-a066-d151f74cea59.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\a1d5a462-e3b8-47d8-9cf5-8d99dde128a1.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\a1d5a462-e3b8-47d8-9cf5-8d99dde128a1.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\a21ebf1e-1153-4893-a977-f33645090a96.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\a21ebf1e-1153-4893-a977-f33645090a96.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\a4c82fb6-e2fc-4af1-8e55-aad91e097c08.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\a4c82fb6-e2fc-4af1-8e55-aad91e097c08.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\a92710da-84ff-45c2-9655-f4156991284b.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\a92710da-84ff-45c2-9655-f4156991284b.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\aaff4ae5-5b6b-4183-be60-ed101336d8f2.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\aaff4ae5-5b6b-4183-be60-ed101336d8f2.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\ae78b378-87dd-4175-b2ae-3f59c8cf4841.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\ae78b378-87dd-4175-b2ae-3f59c8cf4841.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\b3fdb203-b603-4886-8e83-4b77d344cb70.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\b3fdb203-b603-4886-8e83-4b77d344cb70.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\b59f891a-a023-464b-835c-126705420b01.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\b59f891a-a023-464b-835c-126705420b01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\b6c26bfc-966f-4673-a4f2-e4f6d2b3ffd2.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\b6c26bfc-966f-4673-a4f2-e4f6d2b3ffd2.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\b9dde697-0c51-48a8-8978-f9c64c88273b.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\b9dde697-0c51-48a8-8978-f9c64c88273b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\ba2d4ee4-bcd5-4c35-88bb-42568a9c4fff.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\ba2d4ee4-bcd5-4c35-88bb-42568a9c4fff.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\be8ca3f6-cad8-48fa-905d-f50951990e74.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\be8ca3f6-cad8-48fa-905d-f50951990e74.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\c1bbb887-df0c-4d51-813b-aaf3b1b58821.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\c1bbb887-df0c-4d51-813b-aaf3b1b58821.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\c494d403-b407-436b-b0f1-3198638550a1.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\c494d403-b407-436b-b0f1-3198638550a1.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\c4d6f5cf-00cc-4c7f-972b-07e9fa21309f.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\c4d6f5cf-00cc-4c7f-972b-07e9fa21309f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\c529f666-29a2-4f23-982e-009006eacc96.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\c529f666-29a2-4f23-982e-009006eacc96.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\c5d4ff21-f608-4405-a72b-68c84ff205ba.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\c5d4ff21-f608-4405-a72b-68c84ff205ba.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\c64a3492-f3c0-489d-b248-fbe456f8ada3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\c64a3492-f3c0-489d-b248-fbe456f8ada3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\c8de91d5-b0c8-4cf7-83b3-a8747faf51d7.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\c8de91d5-b0c8-4cf7-83b3-a8747faf51d7.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\d1b8f529-74f7-4ecf-8950-4cc52cfe1615.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\d1b8f529-74f7-4ecf-8950-4cc52cfe1615.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\d27c736f-4e4e-4ecd-8459-b70b6150b3cd.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\d27c736f-4e4e-4ecd-8459-b70b6150b3cd.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\d626ec12-eec6-4c4e-bbd7-adb17d8e54ff.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\d626ec12-eec6-4c4e-bbd7-adb17d8e54ff.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\d873f4c7-bbbe-479f-9336-71821d19a464.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\d873f4c7-bbbe-479f-9336-71821d19a464.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\d8e66e69-2954-42ce-942a-ce5898f2741b.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\d8e66e69-2954-42ce-942a-ce5898f2741b.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\d97681f5-9358-4803-a689-bd0cb597db09.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\d97681f5-9358-4803-a689-bd0cb597db09.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\dce98579-3ce7-4bc9-a02c-f085ea736052.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\dce98579-3ce7-4bc9-a02c-f085ea736052.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\dd94dfb4-44e0-45df-962c-b2ad919b158f.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\dd94dfb4-44e0-45df-962c-b2ad919b158f.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\ddc14f4a-d618-4b23-b2c8-2abd37348e70.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\ddc14f4a-d618-4b23-b2c8-2abd37348e70.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\e22033e5-2a75-4f97-b567-2dd62c48ea99.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\e22033e5-2a75-4f97-b567-2dd62c48ea99.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\e2906bb1-0686-4d22-a5b6-da5564009dc0.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\e2906bb1-0686-4d22-a5b6-da5564009dc0.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\e3e66014-c60a-4d72-b66f-9460791cd309.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\e3e66014-c60a-4d72-b66f-9460791cd309.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\e615e1df-f0da-42a0-801f-dbfe77f3e569.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\e615e1df-f0da-42a0-801f-dbfe77f3e569.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\e6c784c0-798b-456e-8492-59c8d46380a7.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\e6c784c0-798b-456e-8492-59c8d46380a7.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\eb611d8c-a446-432b-89a5-c9d3752bd32b.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\eb611d8c-a446-432b-89a5-c9d3752bd32b.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\ecbf19bc-45c3-4b54-acdb-8546241d4315.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\ecbf19bc-45c3-4b54-acdb-8546241d4315.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\ed9ad1c0-bf4a-47a7-99ae-189a2a6ed9a7.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\ed9ad1c0-bf4a-47a7-99ae-189a2a6ed9a7.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\f0109133-5c3b-4f9e-b3b1-defd3346e514.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\f0109133-5c3b-4f9e-b3b1-defd3346e514.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\f0b7dbec-df35-4067-8531-67f983495125.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\f0b7dbec-df35-4067-8531-67f983495125.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\f29d0997-bf38-4297-b6fe-86e8e4564e79.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\f29d0997-bf38-4297-b6fe-86e8e4564e79.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\f614366f-cb7d-46c7-8848-6940e15db75f.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\f614366f-cb7d-46c7-8848-6940e15db75f.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\f6ad8d7d-ec54-4f24-9963-cb805cb5b539.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\f6ad8d7d-ec54-4f24-9963-cb805cb5b539.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\f7487974-1b47-4b00-b478-801857b55bad.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\f7487974-1b47-4b00-b478-801857b55bad.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\fb69f1f6-9716-4ba4-89cc-14c7a1555479.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\fb69f1f6-9716-4ba4-89cc-14c7a1555479.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\fbb87df1-c350-4df3-89a4-a4cb67d776a9.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\fbb87df1-c350-4df3-89a4-a4cb67d776a9.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\fd6efa1d-ef74-45b5-8079-d73d5353b063.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0\\fd6efa1d-ef74-45b5-8079-d73d5353b063.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\fd9ed93c-a3ec-41ad-85a4-8ed1521ecb8b.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\fd9ed93c-a3ec-41ad-85a4-8ed1521ecb8b.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\0\\fe8008f0-cd51-43b3-85c8-1e1c5b114e2e.png",
+      "PackagePath": "staticwebassets\\images\\products\\0\\fe8008f0-cd51-43b3-85c8-1e1c5b114e2e.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\10\\4c3035b5-743f-4ba6-866d-38329220339b.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\10\\4c3035b5-743f-4ba6-866d-38329220339b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\10\\c9f419fa-2b06-4eef-9560-3b92ff3a2509.png",
+      "PackagePath": "staticwebassets\\images\\products\\10\\c9f419fa-2b06-4eef-9560-3b92ff3a2509.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\1\\03cc7be9-2ed4-4790-95ed-da5ed85951e7.png",
+      "PackagePath": "staticwebassets\\images\\products\\1\\03cc7be9-2ed4-4790-95ed-da5ed85951e7.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\1\\20ef370d-4b39-4ac7-8b76-1d569a8d4c37.png",
+      "PackagePath": "staticwebassets\\images\\products\\1\\20ef370d-4b39-4ac7-8b76-1d569a8d4c37.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\1\\3ac0dca9-42bb-4b08-84f5-fa466123e705.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\1\\3ac0dca9-42bb-4b08-84f5-fa466123e705.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\1\\3ed718ed-33e5-4347-b555-d2ae655cb40a.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\1\\3ed718ed-33e5-4347-b555-d2ae655cb40a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\1\\554040b7-3c76-4bf3-af9e-7c75c7dac74c.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\1\\554040b7-3c76-4bf3-af9e-7c75c7dac74c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\1\\8f809464-a1e5-4ca4-b0d4-7dda37bad5f6.png",
+      "PackagePath": "staticwebassets\\images\\products\\1\\8f809464-a1e5-4ca4-b0d4-7dda37bad5f6.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\1\\ae578995-5731-4e67-ae16-b45a7c6cd63d.png",
+      "PackagePath": "staticwebassets\\images\\products\\1\\ae578995-5731-4e67-ae16-b45a7c6cd63d.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\1\\b6841cd6-2abf-46e0-bab7-4e51d68611f3.png",
+      "PackagePath": "staticwebassets\\images\\products\\1\\b6841cd6-2abf-46e0-bab7-4e51d68611f3.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\1\\f0c13e01-8663-4766-9d26-b2196ee35dc2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\1\\f0c13e01-8663-4766-9d26-b2196ee35dc2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\5\\33f131aa-7a39-4a97-a367-1444a6423a71.gif",
+      "PackagePath": "staticwebassets\\images\\products\\5\\33f131aa-7a39-4a97-a367-1444a6423a71.gif"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\5\\7149a6f0-b625-47db-a292-6dabf69f166c.png",
+      "PackagePath": "staticwebassets\\images\\products\\5\\7149a6f0-b625-47db-a292-6dabf69f166c.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\5\\d0c5bd37-45fa-4869-97c1-a81f1ad5c946.png",
+      "PackagePath": "staticwebassets\\images\\products\\5\\d0c5bd37-45fa-4869-97c1-a81f1ad5c946.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\6\\73ca102b-7f0f-4d73-8f4c-38a1fec5c108.webp",
+      "PackagePath": "staticwebassets\\images\\products\\6\\73ca102b-7f0f-4d73-8f4c-38a1fec5c108.webp"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\6\\de07e40c-3aed-4e60-a451-c2d491ecf68b.webp",
+      "PackagePath": "staticwebassets\\images\\products\\6\\de07e40c-3aed-4e60-a451-c2d491ecf68b.webp"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\7\\188b24cd-4cdb-4e5e-b0fe-3012c3e8570b.png",
+      "PackagePath": "staticwebassets\\images\\products\\7\\188b24cd-4cdb-4e5e-b0fe-3012c3e8570b.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\7\\22612a62-6459-49eb-ba8e-7a60aad505ba.png",
+      "PackagePath": "staticwebassets\\images\\products\\7\\22612a62-6459-49eb-ba8e-7a60aad505ba.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\7\\27ccb4ac-417a-4159-9752-f06e5f5535b3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\7\\27ccb4ac-417a-4159-9752-f06e5f5535b3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\7\\6f95809e-d868-4c20-a849-87169b1d6483.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\7\\6f95809e-d868-4c20-a849-87169b1d6483.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\7\\e11db853-f629-41fd-8a1c-d935231e52d8.png",
+      "PackagePath": "staticwebassets\\images\\products\\7\\e11db853-f629-41fd-8a1c-d935231e52d8.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\8\\0b5109b1-1616-4704-b972-98cc7fa9c127.gif",
+      "PackagePath": "staticwebassets\\images\\products\\8\\0b5109b1-1616-4704-b972-98cc7fa9c127.gif"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\8\\29351864-ce67-4823-b669-6a304d1a1c15.png",
+      "PackagePath": "staticwebassets\\images\\products\\8\\29351864-ce67-4823-b669-6a304d1a1c15.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\8\\77a6c023-eca4-4609-8656-c47af6b78328.png",
+      "PackagePath": "staticwebassets\\images\\products\\8\\77a6c023-eca4-4609-8656-c47af6b78328.png"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\9\\688aa68f-87e2-4351-8dc2-b282888a6731.webp",
+      "PackagePath": "staticwebassets\\images\\products\\9\\688aa68f-87e2-4351-8dc2-b282888a6731.webp"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\images\\products\\9\\9dd1638e-1d58-4ee8-8160-58921616926f.webp",
+      "PackagePath": "staticwebassets\\images\\products\\9\\9dd1638e-1d58-4ee8-8160-58921616926f.webp"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\img\\a3.jpg",
+      "PackagePath": "staticwebassets\\img\\a3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\img\\ao.jpg",
+      "PackagePath": "staticwebassets\\img\\ao.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\img\\ao1.jpg",
+      "PackagePath": "staticwebassets\\img\\ao1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\PREDATOR\\Downloads\\Doan_Coso\\Doan_Coso\\Doan_Coso\\wwwroot\\user.jpg",
+      "PackagePath": "staticwebassets\\user.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Fashion.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Fashion.props",
+      "PackagePath": "build\\Fashion.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Fashion.props",
+      "PackagePath": "buildMultiTargeting\\Fashion.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Fashion.props",
+      "PackagePath": "buildTransitive\\Fashion.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,50 @@
+﻿@model IEnumerable<App_Web.Models.Introduction>
+
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<h3 class="p-2">Danh sách bài viết</h3>
+<p class="pl-2">
+    @if (Model.Any())
+    {
+        <a href="/Admin/Introductions/Create" class="btn btn-success">Thêm giới thiệu</a>
+    }
+    else
+    {
+        <a href="/Admin/Introductions/Create" class="btn btn-success">Thêm giới thiệu</a>
+    }
+</p>
+<table class="table table-striped table-condensed">
+    <thead>
+        <tr>
+            <th class="text-center">STT</th>
+            <th class="text-center">Tên giới thiệu</th>
+            <th class="text-center">Mô tả</th>
+            <th class="text-center">Hình ảnh</th>
+            <th class="text-center">Ngày tạo</th>
+            <th class="text-center">Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td class="text-center">@item.Id</td>
+                <td class="text-center">@Html.DisplayFor(modelItem => item.Title)</td>
+                <td class="text-center" style="text-wrap: pretty;">@Html.DisplayFor(modelItem => item.Description)</td>
+                <td class="text-center"><img src="@item.ImageUrl.First()" style="max-width: 100px;" height="70px" /></td>
+                <td class="text-center">@Html.DisplayFor(modelItem => item.CreatedAt)</td>
+                <td class="text-center align-middle">
+                    <div class="d-flex justify-content-center">
+                        <a href="/Admin/Introductions/Edit?id=@item.Id" class="btn btn-secondary">Sửa</a>
+                        <a href="/Admin/Introductions/Details?id=@item.Id" class="btn btn-info">Chi tiết</a>
+                        <form method="post" action="/Admin/Introductions/Delete" onsubmit="return confirm('Are you sure you want to delete this item?');">
+                            <input type="hidden" name="id" value="@item.Id" />
+                            <button type="submit" class="btn btn-danger mr-2">Xóa</button>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

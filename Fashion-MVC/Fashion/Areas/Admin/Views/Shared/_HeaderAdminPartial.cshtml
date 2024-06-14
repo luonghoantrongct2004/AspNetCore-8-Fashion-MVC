@@ -1,0 +1,110 @@
+﻿<!-- Brand demo (see ~/assetsAdmin/css/demo/demo.css) -->
+<div class="app-brand demo">
+    <span class="app-brand-logo demo">
+        <img src="~/assetsAdmin/img/logo.png" alt="Brand Logo" witdh="50px" height="50px" asp-append-version="true">
+    </span>
+    <a href="/Admin/Report" class="app-brand-text demo sidenav-text font-weight-normal ml-2">Admin</a>
+    <a href="javascript:" class="layout-sidenav-toggle sidenav-link text-large ml-auto">
+        <i class="ion ion-md-menu align-middle"></i>
+    </a>
+</div>
+<div class="sidenav-divider mt-0"></div>
+
+<!-- Links -->
+<ul class="sidenav-inner py-1">
+
+    <!-- Dashboards -->
+    <li class="sidenav-item active">
+        <a asp-controller="Admin" asp-action="Report" class="sidenav-link">
+            <i class="sidenav-icon feather icon-home"></i>
+            <div>Dashboards</div>
+        </a>
+    </li>
+
+    <!-- Layouts -->
+    <li class="sidenav-divider mb-1"></li>
+    <li class="sidenav-header small font-weight-semibold">Manage</li>
+    <li class="sidenav-item">
+        <a class="sidenav-link" asp-controller="Admin" asp-action="User">
+            <i class="sidenav-icon feather icon-user"></i>
+            <div>Người dùng</div>
+        </a>
+    </li>
+    <li class="sidenav-item">
+        <a asp-controller="Admin" asp-action="Role" class="sidenav-link">
+            <i class="sidenav-icon feather icon-users"></i>
+            <div>Phân quyền</div>
+        </a>
+    </li>
+    <li class="sidenav-item">
+        <a asp-controller="Admin" asp-action="RevenueReport" class="sidenav-link">
+            <i class="sidenav-icon feather icon-feather"></i>
+            <div>Báo cáo doanh thu</div>
+        </a>
+    </li>
+    <li class="sidenav-item">
+        <a asp-controller="Admin" asp-action="Coupons" class="sidenav-link">
+            <i class="sidenav-icon feather icon-box"></i>
+            <div>Quản lí phiếu giảm giá</div>
+        </a>
+    </li>
+    <li class="sidenav-item">
+        <a asp-controller="Admin" asp-action="Comments" class="sidenav-link">
+            <i class="sidenav-icon feather icon-plus-square"></i>
+            <div>Quản lí bình luận</div>
+        </a>
+    </li>
+    <li class="sidenav-item">
+        <a asp-controller="Admin" asp-action="Products" class="sidenav-link">
+            <i class="sidenav-icon feather icon-layout"></i>
+            <div>Quản lí sản phẩm</div>
+        </a>
+    </li>
+    <li class="sidenav-item">
+        <a asp-controller="Admin" asp-action="Orders" class="sidenav-link">
+            <i class="sidenav-icon feather icon-plus-square"></i>
+            <div>Quản lí đơn hàng</div>
+        </a>
+    </li>
+    <li class="sidenav-item">
+        <a asp-controller="Admin" asp-action="Categories" class="sidenav-link">
+            <i class="sidenav-icon feather icon-tag"></i>
+            <div>Quản lí thể loại</div>
+        </a>
+    </li>
+    <li class="sidenav-item">
+        <a asp-controller="Admin" asp-action="Brands" class="sidenav-link">
+            <i class="sidenav-icon feather icon-command"></i>
+            <div>Quản lí thương hiệu</div>
+        </a>
+    </li>
+    <li class="sidenav-item">
+        <a asp-controller="Admin" asp-action="News" class="sidenav-link">
+            <i class="sidenav-icon feather icon-aperture"></i>
+            <div>Quản lí tin tức</div>
+        </a>
+    </li>
+    <li class="sidenav-item">
+        <a asp-controller="Admin" asp-action="Introductions" class="sidenav-link">
+            <i class="sidenav-icon feather icon-bookmark"></i>
+            <div>Quản lí giới thiệu</div>
+        </a>
+    </li>
+    <li class="sidenav-item">
+        <a href="/Home" class="sidenav-link">
+            <i class="sidenav-icon feather icon-home"></i>
+            <div>Trở về trang chủ</div>
+        </a>
+    </li>
+    <!-- Pages -->
+    @* <li class="sidenav-divider mb-1"></li> *@
+    @* <li class="sidenav-header small font-weight-semibold">Action</li> *@
+    <li class="sidenav-item">
+        <form action="/logout" method="post" >
+            @Html.AntiForgeryToken()
+            <button type="submit" class="dropdown-item sidenav-link">
+                <i class="feather icon-power text-danger"></i> &nbsp;
+            </button>
+        </form>
+    </li>
+</ul>

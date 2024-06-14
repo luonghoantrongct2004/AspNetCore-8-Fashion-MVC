@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CanTeen</title>
+    <!-- Font roboto -->
+    <link asp-append-version="true" rel="preconnect" href="https://fonts.gstatic.com">
+    <link asp-append-version="true" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Icon fontanwesome -->
+    <link asp-append-version="true" rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Reset css & grid sytem -->
+    <link asp-append-version="true" rel="stylesheet" href="~/assets/css/library.css">
+    <link asp-append-version="true" href="~/assets/owlCarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <!-- Layout -->
+    <link asp-append-version="true" rel="stylesheet" href="~/assets/css/common.css">
+    <!-- index -->
+    <link asp-append-version="true" href="~/assets/css/home.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Owl caroucel Js-->
+    <script src="~/assets/owlCarousel/owl.carousel.min.js"></script>
+
+</head>
+<body>
+    <style>
+        .main{
+            background-color: #eff6fc;
+        }
+    </style>
+    @await Html.PartialAsync("_HeaderPartial.cshtml")
+    <div class="main">
+        <partial name="_AlertMessage"></partial>
+            @RenderBody()
+            </div>
+    @await Html.PartialAsync("_FooterPartial.cshtml")
+    <script>
+        $('.owl-carousel.hight').owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: true,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+        $('.owl-carousel.news').owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: true,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 2
+                }
+            }
+        })
+        $('.owl-carousel.bands').owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: false,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 6
+                }
+            }
+        })
+    </script>
+        <div class="up-top" id="upTop" onclick="goToTop()">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+
+    </div>
+    <script src="~/assets/js/homeScript.js"></script>
+    <script src="~/assets/js/commonscript.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

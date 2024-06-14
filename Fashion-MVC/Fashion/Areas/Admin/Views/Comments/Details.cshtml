@@ -1,0 +1,45 @@
+﻿@model App_Web.Models.Comment
+
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1 class="p-2">Chi tiết Comment</h1>
+
+<div>
+    <div class="table-responsive">
+        <table class="table table-striped table-condensed">
+            <tr>
+                <th class="text-center">
+                    Nội dung
+                </th>
+                <td class="text-center"> @Html.DisplayFor(model => model.Content)</td>
+            </tr>
+            <tr>
+                <th class="text-center">
+                    Ngày đăng
+                </th>
+                <td class="text-center"> @Html.DisplayFor(model => model.PostedAt)</td>
+            </tr>
+            <tr>
+                <th class="text-center">
+                    Đánh giá
+                </th>
+                <td class="text-center"> @Html.DisplayFor(model => model.StarRating)</td>
+            </tr>
+            <tr>
+                <th class="text-center">
+                    Người dùng
+                </th>
+                <td class="text-center"> @Html.DisplayFor(model => model.User.Email)</td>
+            </tr>
+        </table>
+        <div class="text-center d-flex align-middle justify-content-center">
+            <form method="post" action="/Admin/Comments/Delete" onsubmit="return confirm('Bạn chắc chắn xóa?');">
+                <input type="hidden" name="id" value="@Model.Id" />
+                <button type="submit" class="btn btn-danger">Xóa</button>
+            </form>
+            <a href="/Admin/Comments" class="btn btn-info">Trở về danh sách</a>
+        </div>
+    </div>
+</div>

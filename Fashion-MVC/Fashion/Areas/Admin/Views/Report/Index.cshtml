@@ -1,0 +1,247 @@
+﻿@model App.Areas.Admin.Models.DashboardViewModel
+<style>
+    .table-fixed tbody {
+        height: 258px;
+        overflow-y: auto;
+        width: 100%;
+    }
+
+    .table-fixed thead,
+    .table-fixed tbody,
+    .table-fixed tr,
+    .table-fixed td {
+        display: block;
+    }
+
+        .table-fixed tbody td,
+        .table-fixed tbody th,
+        .table-fixed thead > tr > th {
+            float: left;
+            position: relative;
+            &::after
+
+    {
+        content: '';
+        clear: both;
+        display: block;
+    }
+
+    }</style>
+<!-- [ Layout navbar ( Header ) ] Start -->
+<nav class="layout-navbar navbar navbar-expand-lg align-items-lg-center bg-dark container-p-x" id="layout-navbar">
+
+    <!-- Thương hiệu (xem ~/assets/css/demo/demo.css) -->
+    <a href="/Admin/Report" class="navbar-brand app-brand demo d-lg-none py-0 mr-4">
+        <span class="app-brand-logo demo">
+            <img src="~/assets/img/logo-dark.png" alt="Brand Logo" class="img-fluid">
+        </span>
+        <span class="app-brand-text demo font-weight-normal ml-2">Quản trị viên</span>
+    </a>
+
+    <!-- Toggle thanh điều hướng (xem ~/assets/css/demo/demo.css) -->
+    <div class="layout-sidenav-toggle navbar-nav d-lg-none align-items-lg-center mr-auto">
+        <a class="nav-item nav-link px-0 mr-lg-4" href="javascript:">
+            <i class="ion ion-md-menu text-large align-middle"></i>
+        </a>
+    </div>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#layout-navbar-collapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse collapse" id="layout-navbar-collapse">
+        <!-- Đường phân cách -->
+        <hr class="d-lg-none w-100 my-2">
+
+        <div class="navbar-nav align-items-lg-center">
+            Hạnh phúc đơn giản là những thứ đơn giản mà chúng ta đang thấy, bấm vào chuông để thấy được hạnh phúc.
+        </div>
+
+        <div class="navbar-nav align-items-lg-center ml-auto">
+            <div class="demo-navbar-notifications nav-item dropdown mr-lg-3">
+                <a class="nav-link dropdown-toggle hide-arrow" href="#" data-toggle="dropdown">
+                    <i class="feather icon-bell navbar-icon align-middle"></i>
+                    <span class="badge badge-danger badge-dot indicator"></span>
+                    <span class="d-lg-none align-middle">&nbsp; Thông báo</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <div class="bg-primary text-center text-white font-weight-bold p-3">
+                        Thông báo từ hệ thống
+                    </div>
+                    <div class="list-group list-group-flush">
+                        <a href="javascript:" class="list-group-item list-group-item-action media d-flex align-items-center">
+                            <div class="ui-icon ui-icon-sm feather icon-user-plus bg-info border-0 text-white"></div>
+                            <div class="media-body line-height-condenced ml-3">
+                                <div class="text-dark">
+                                    Không có gì
+                                </div>
+                                <div class="text-light small mt-1">
+                                    Bạn đã bị lừa hehe.
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="demo-navbar-messages nav-item dropdown mr-lg-3">
+                <a class="nav-link dropdown-toggle hide-arrow" href="#" data-toggle="dropdown">
+                    <i class="feather icon-mail navbar-icon align-middle"></i>
+                    <span class="badge badge-success badge-dot indicator"></span>
+                    <span class="d-lg-none align-middle">&nbsp; Tin nhắn</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <div class="bg-primary text-center text-white font-weight-bold p-3">
+                        @Model.TotalOrder Tin nhắn mới
+                    </div>
+                    <div class="list-group list-group-flush">
+                        @foreach (var item in Model.Orders)
+                        {
+                            <a href="javascript:" class="list-group-item list-group-item-action media d-flex align-items-center">
+                                <div class="media-body ml-3">
+                                    <div class="text-dark line-height-condenced">@item.User.FullName đã mua với tổng tiền @String.Format("{0:N0}", item.TotalPrice) đ</div>
+                                    <div class="text-light small mt-1">
+                                        @item.OrderDate
+                                    </div>
+                                </div>
+                            </a>
+                        }
+                    </div>
+                </div>
+            </div>
+
+            <!-- Đường phân cách -->
+            <div class="nav-item d-none d-lg-block text-big font-weight-light line-height-1 opacity-25 mr-3 ml-1">|</div>
+            <div class="demo-navbar-user nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                    <span class="d-inline-flex flex-lg-row-reverse align-items-center align-middle">
+                        <span>@Model.Username</span>
+                    </span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <div class="dropdown-divider"></div>
+                    <form action="/Account/LogOff" method="post">
+                        @Html.AntiForgeryToken()
+                        <button type="submit" class="dropdown-item">
+                            <i class="feather icon-power text-danger"></i> &nbsp; Đăng xuất
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- [ Thanh điều hướng bố cục ( Header ) ] End -->
+<!-- [ Nội dung bố cục ] Start -->
+<div class="layout-content">
+
+    <!-- [ Nội dung ] Start -->
+    <div class="container-fluid flex-grow-1 container-p-y">
+        <h4 class="font-weight-bold py-3 mb-0">Bảng điều khiển</h4>
+        <div class="text-muted small mt-0 mb-4 d-block breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#"><i class="feather icon-home"></i></a></li>
+                <li class="breadcrumb-item"><a href="#">Bảng điều khiển</a></li>
+            </ol>
+        </div>
+        <div class="row">
+            <!-- Dòng 1 Start -->
+            <div class="col-lg-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="">
+                                        <h2 class="mb-2">@Model.OrderToday</h2>
+                                        <p class="text-muted mb-0"><span class="badge badge-primary">Đơn hàng hôm nay</span></p>
+                                    </div>
+                                    <div class="lnr lnr-leaf display-4 text-primary"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="">
+                                        <h2 class="mb-2">@Model.TotalOrder</h2>
+                                        <p class="text-muted mb-0"><span class="badge badge-success">Tổng số đơn hàng </span> </p>
+                                    </div>
+                                    <div class="lnr lnr-chart-bars display-4 text-success"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="">
+                                        <h2 class="mb-2">@Model.NewCustomerPercentage% <small></small></h2>
+                                        <p class="text-muted mb-0">Khách hàng mới <span class="badge badge-danger">@Model.NewCustomerCount</span></p>
+                                    </div>
+                                    <div class="lnr lnr-rocket display-4 text-danger"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="">
+                                        <h2 class="mb-2">@Model.TotalProduct</h2>
+                                        <p class="text-muted mb-0"><span class="badge badge-warning">Tổng số sản phẩm</span> </p>
+                                    </div>
+                                    <div class="lnr lnr-cart display-4 text-warning"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-7">
+                <div class="card mb-4">
+                    <div class="nav-tabs-top">
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="sale-stats">
+                                <div style="height: 330px" id="tab-table-1">
+                                    <div class="table-responsive">
+                                        <table class="table table-fixed">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col" class="col-4">
+                                                        <strong>No. </strong>
+                                                    </th>
+                                                    <th scope="col" class="col-4">Người dùng</th>
+                                                    <th scope="col" class="col-4">Mô tả</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @foreach (var item in Model.Orders)
+                                                {
+                                                    <tr>
+                                                        <td scope="row" class="col-4">@item.OrderDate.ToShortDateString()</td>
+                                                        <td class="col-4">@item.User.FullName</td>
+                                                        <td class="col-4">
+                                                            <p>Ngày đăng ký: @item.OrderDate.ToShortDateString()</p>
+                                                            <p>Tổng tiền: @String.Format("{0:N0}", item.TotalPrice) đ</p>
+                                                        </td>
+                                                    </tr>
+                                                }
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Dòng 1 End -->
+        </div>
+    </div>
+</div>

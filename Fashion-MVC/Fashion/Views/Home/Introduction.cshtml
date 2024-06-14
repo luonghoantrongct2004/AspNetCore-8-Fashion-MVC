@@ -1,0 +1,56 @@
+﻿@model IEnumerable<App_Web.Models.Introduction>
+@{
+    ViewData["Title"] = "Introduction";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" type="text/css" href="~/assets/css/contact.css" asp-append-version="true">
+<style>
+    .about-us {
+        margin-top: 20px;
+        padding-left: 40px;
+        text-align: center;
+    }
+    .about-us__heading {
+        text-align: start;
+        flex: 0 0 100%;
+        font-size: 2.4rem;
+        text-transform: initial;
+        color: var(--default-cl);
+        margin-bottom: 16px;
+    }
+
+    .about-us > .form__group {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 0;
+        margin-right: -12px;
+    }
+</style>
+@if(Model != null){
+<div class="grid wide" style="margin-top: 115px; margin-bottom:-120px">
+    @foreach(var item in Model){
+    <div class="row">
+        <div class="col l-6 m-12 s-12">
+            <div class="contact__wrap">
+                <div class="contact__img">
+                        <img src="@item.ImageUrl?.First()" style="height: 380px;width: 600px;" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col l-6 m-12 s-12">
+            <div class="about-us">
+                    <div class="about-us__heading" style="font-size:2.9rem;">@item.Title</div>
+                <div class="form__group" style="font-size:20px;">
+                    @item.Description
+                </div>
+            </div>
+        </div>
+    </div>
+    }
+</div>
+}
+
+<div class="grid wide" style="margin-top: 115px;">
+    <div class="row">
+    </div>
+</div>

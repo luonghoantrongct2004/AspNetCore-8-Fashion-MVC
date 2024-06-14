@@ -1,0 +1,246 @@
+﻿@model App_Web.Models.Product
+
+@{
+    ViewData["Title"] = "Tạo Sản Phẩm";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<style>
+    .customCheckBoxHolder {
+        margin: 5px;
+        display: flex;
+    }
+
+    .customCheckBox {
+        width: fit-content;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        user-select: none;
+        padding: 2px 8px;
+        background-color: rgba(0, 0, 0, 0.16);
+        border-radius: 0px;
+        color: rgb(8 8 8 / 70%);
+        transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+        transition-duration: 300ms;
+        transition-property: color, background-color, box-shadow;
+        display: flex;
+        height: 32px;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 1px 0px inset, rgba(255, 255, 255, 0.17) 0px 1px 1px 0px;
+        outline: none;
+        justify-content: center;
+        min-width: 55px;
+    }
+
+        .customCheckBox:hover {
+            background-color: #00b21c;
+            color: white;
+            box-shadow: rgba(0, 0, 0, 0.23) 0px -4px 1px 0px inset, rgba(255, 255, 255, 0.17) 0px -1px 1px 0px, rgba(0, 0, 0, 0.17) 0px 2px 4px 1px;
+        }
+
+        .customCheckBox .inner {
+            font-size: 15px;
+            font-weight: 900;
+            pointer-events: none;
+            transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition-duration: 300ms;
+            transition-property: transform;
+            transform: translateY(0px);
+        }
+
+        .customCheckBox:hover .inner {
+            transform: translateY(-2px);
+        }
+
+    /* Multiple Checkboxes can be chained together for a radio input */
+    .customCheckBoxWrapper:first-of-type .customCheckBox {
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        border-right: 0px;
+    }
+
+    .customCheckBoxWrapper:last-of-type .customCheckBox {
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+        border-left: 0px;
+    }
+
+    .customCheckBoxInput {
+        display: none;
+    }
+
+        .customCheckBoxInput:checked + .customCheckBoxWrapper .customCheckBox {
+            background-color: #00b21c;
+            color: white;
+            box-shadow: rgba(0, 0, 0, 0.23) 0px -4px 1px 0px inset, rgba(255, 255, 255, 0.17) 0px -1px 1px 0px, rgba(0, 0, 0, 0.17) 0px 2px 4px 1px;
+        }
+
+            .customCheckBoxInput:checked + .customCheckBoxWrapper .customCheckBox .inner {
+                transform: translateY(-2px);
+            }
+
+            .customCheckBoxInput:checked + .customCheckBoxWrapper .customCheckBox:hover {
+                background-color: #00b21c;
+                box-shadow: rgba(0, 0, 0, 0.26) 0px -4px 1px 0px inset, rgba(255, 255, 255, 0.17) 0px -1px 1px 0px, rgba(0, 0, 0, 0.15) 0px 3px 6px 2px;
+            }
+
+    .customCheckBoxWrapper .customCheckBox:hover .inner {
+        transform: translateY(-2px);
+    }
+</style>
+
+<h3 class="p-2">Tạo Sản Phẩm</h3>
+
+<div class="card mb-1">
+    <h6 class="card-header">Tạo Sản Phẩm</h6>
+    <div class="card-body">
+        <form id="myForm" method="post" action="/Admin/Products/Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-row">
+            <div class="form-group col-md-6">
+                <label asp-for="ProductName" class="control-label">Tên Sản Phẩm</label>
+                <input asp-for="ProductName" class="form-control" />
+                <span asp-validation-for="ProductName" class="text-danger"></span>
+            </div>
+
+            <div  class="form-group col-md-6">
+                <label asp-for="Description" class="control-label">Mô Tả</label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            </div>
+            <div class="form-row">
+            <div class="form-group col-md-6">
+                <label asp-for="Price" class="control-label">Giá</label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="files">Select Images:</label>
+                <input type="file" id="imageInput" name="files" multiple required>
+                <span id="imageError" class="text-danger"></span>
+            </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                <label asp-for="CategoryId" class="control-label">Danh Mục</label>
+                <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.CategoryId"></select>
+                <span asp-validation-for="CategoryId" class="text-danger"></span>
+            </div>
+
+            <div  class="form-group col-md-6">
+                <label asp-for="BrandId" class="control-label">Thương Hiệu</label>
+                <select asp-for="BrandId" class="form-control" asp-items="ViewBag.BrandId"></select>
+                <span asp-validation-for="BrandId" class="text-danger"></span>
+            </div>
+            </div>
+            <div class="form-row">
+            <div  class="form-group col-md-6">
+                <label asp-for="StockQuantity" class="control-label">Số Lượng Tồn Kho</label>
+                <input asp-for="StockQuantity" class="form-control" />
+                <span asp-validation-for="StockQuantity" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="Discount" class="control-label">Giảm Giá</label>
+                    <input asp-for="Discount" class="form-control" />
+                    <span asp-validation-for="Discount" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-row">
+            <div class="form-group col-md-6">
+                    <label for="selectedColors" class="control-label">Màu</label>
+                    <div class="customCheckBoxHolder">
+
+                        <input type="checkbox" name="selectedColors" value="Trắng" id="cCB1" class="customCheckBoxInput">
+                        <label for="cCB1" class="customCheckBoxWrapper">
+                            <div class="customCheckBox">
+                                <div class="inner">Trắng</div>
+                            </div>
+                        </label>
+                        <input type="checkbox" name="selectedColors" value="Đen" id="cCB2" class="customCheckBoxInput">
+                        <label for="cCB2" class="customCheckBoxWrapper">
+                            <div class="customCheckBox">
+                                <div class="inner">Đen</div>
+                            </div>
+                        </label>
+                        <input type="checkbox" name="selectedColors" value="Xám" id="cCB3" class="customCheckBoxInput">
+                        <label for="cCB3" class="customCheckBoxWrapper">
+                            <div class="customCheckBox">
+                                <div class="inner">Xám</div>
+                            </div>
+                        </label>
+
+                    </div>
+                    <span asp-validation-for="Color" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="selectedSizes" class="control-label">Kích thước</label>
+                    <div class="customCheckBoxHolder">
+
+                        <input type="checkbox" name="selectedSizes" value="M" id="cCB4" class="customCheckBoxInput">
+                        <label for="cCB4" class="customCheckBoxWrapper">
+                            <div class="customCheckBox">
+                                <div class="inner">M</div>
+                            </div>
+                        </label>
+                        <input type="checkbox" name="selectedSizes" value="L" id="cCB5" class="customCheckBoxInput">
+                        <label for="cCB5" class="customCheckBoxWrapper">
+                            <div class="customCheckBox">
+                                <div class="inner">L</div>
+                            </div>
+                        </label>
+                        <input type="checkbox" name="selectedSizes" value="XL" id="cCB6" class="customCheckBoxInput">
+                        <label for="cCB6" class="customCheckBoxWrapper">
+                            <div class="customCheckBox">
+                                <div class="inner">XL</div>
+                            </div>
+                        </label>
+                        <input type="checkbox" name="selectedSizes" value="2XL" id="cCB7" class="customCheckBoxInput">
+                        <label for="cCB7" class="customCheckBoxWrapper">
+                            <div class="customCheckBox">
+                                <div class="inner">2XL</div>
+                            </div>
+                        </label>
+                        <input type="checkbox" name="selectedSizes" value="3XL" id="cCB8" class="customCheckBoxInput">
+                        <label for="cCB8" class="customCheckBoxWrapper">
+                            <div class="customCheckBox">
+                                <div class="inner">3XL</div>
+                            </div>
+                        </label>
+
+                    </div>
+                    <span asp-validation-for="Size" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group justify-content-center text-center pt-4 pl-2">
+                <button type="reset" class="btn btn-primary">Đặt Lại</button>
+                <button type="submit" class="btn btn-success">Tạo</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <a href="/Admin/Products/Index" class="btn btn-info">Quay Lại Danh Sách</a>
+    </div>
+</div>
+<script>
+    var form = document.getElementById('myForm');
+
+    form.addEventListener('submit', function (event) {
+        var files = imageInput.files;
+        if (files.length == 0) {
+            imageError.innerText = "Please select at least one image.";
+            event.preventDefault();
+        }
+    });
+</script>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" class="material-style layout-fixed">
+<head>
+    <meta charset="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link asp-append-version="true"rel="icon" type="image/x-icon" href="~/assetsAdmin/img/favicon.ico">
+
+    <!-- Google fonts -->
+    <link asp-append-version="true"href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+    <!-- Icon fonts -->
+    <link asp-append-version="true"rel="stylesheet" href="~/assetsAdmin/fonts/fontawesome.css">
+    <link asp-append-version="true"rel="stylesheet" href="~/assetsAdmin/fonts/ionicons.css">
+    <link asp-append-version="true"rel="stylesheet" href="~/assetsAdmin/fonts/linearicons.css">
+    <link asp-append-version="true"rel="stylesheet" href="~/assetsAdmin/fonts/open-iconic.css">
+    <link asp-append-version="true"rel="stylesheet" href="~/assetsAdmin/fonts/pe-icon-7-stroke.css">
+    <link asp-append-version="true"rel="stylesheet" href="~/assetsAdmin/fonts/feather.css">
+
+    <!-- Core stylesheets -->
+    <link asp-append-version="true"rel="stylesheet" href="~/assetsAdmin/css/bootstrap-material.css">
+    <link asp-append-version="true"rel="stylesheet" href="~/assetsAdmin/css/shreerang-material.css">
+    <link asp-append-version="true"rel="stylesheet" href="~/assetsAdmin/css/uikit.css">
+
+    <!-- Libs -->
+    <link asp-append-version="true"rel="stylesheet" href="~/assetsAdmin/libs/perfect-scrollbar/perfect-scrollbar.css">
+    <link asp-append-version="true"rel="stylesheet" href="~/assetsAdmin/libs/flot/flot.css">
+    <style>
+        .img-fluid {
+            max-width: 100%;
+            max-height: 100%;
+            height: 200px;
+            width:400px;
+        }
+        btn .btn-primary .waves-input-wrapper .waves-effect{
+            background: #ff4a00 !important;
+            color: #fff !important;
+        }
+
+        .waves-button-input {
+            background: #ff4a00 !important;
+            font-size: 0.8125rem !important;
+            text-transform: uppercase !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        .layout-navbar {
+            min-height: 70px;
+        }
+
+        .fixed-button {
+            display: none;
+            position: fixed;
+            bottom: -50px;
+            right: 30px;
+            opacity: 0;
+            z-index: 9;
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            -webkit-animation: pulse 2s infinite;
+            animation: pulse 2s infinite;
+            border-radius: 0.25rem
+        }
+
+            .fixed-button .btn {
+                display: none;
+                margin: 0;
+                background: #79b530;
+                border: none;
+                border-radius: 25px;
+                padding: 0.6rem 1.3rem;
+                border-bottom: 2px solid #5e8d25;
+                text-transform: capitalize;
+                font-weight: bold;
+                font-size: 16px
+            }
+
+                .fixed-button .btn:hover {
+                    display: none;
+                    background: #79b530;
+                    border: none;
+                    border-bottom: 2px solid #5e8d25
+                }
+
+            .fixed-button:hover {
+                display: none;
+                -webkit-animation: none;
+                animation: none
+            }
+
+            .fixed-button.active {
+                display: none;
+                bottom: 50px;
+                opacity: 1
+            }
+    </style>
+</head>
+<body>
+    <!-- [ Preloader ] Start -->
+    <div class="page-loader">
+        <div class="bg-primary"></div>
+    </div>
+    <div class="layout-wrapper layout-2">
+        <div class="layout-inner">
+            <!-- [ Layout sidenav ] Start -->
+            <div id="layout-sidenav" class="layout-sidenav sidenav sidenav-vertical bg-white logo-dark">
+            @await Html.PartialAsync("_HeaderAdminPartial.cshtml");
+            </div>
+            <div class="layout-container">
+            @RenderBody()
+            </div>
+        </div>
+
+        <div class="layout-overlay layout-sidenav-toggle"></div>
+     </div>
+    <!-- JavaScript Libraries -->
+    <script asp-append-version="true"  src="~/assetsAdmin/js/pace.js"></script>
+    <script asp-append-version="true"  src="~/assetsAdmin/js/jquery-3.3.1.min.js"></script>
+    <script asp-append-version="true"  src="~/assetsAdmin/libs/popper/popper.js"></script>
+    <script asp-append-version="true"  src="~/assetsAdmin/js/bootstrap.js"></script>
+    <script asp-append-version="true"  src="~/assetsAdmin/js/sidenav.js"></script>
+    <script asp-append-version="true"  src="~/assetsAdmin/js/layout-helpers.js"></script>
+    <script asp-append-version="true"  src="~/assetsAdmin/js/material-ripple.js"></script>
+
+    <!-- Libs -->
+    <script asp-append-version="true"  src="~/assetsAdmin/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script asp-append-version="true"  src="~/assetsAdmin/libs/eve/eve.js"></script>
+    <script asp-append-version="true"  src="~/assetsAdmin/libs/flot/flot.js"></script>
+    <script asp-append-version="true"  src="~/assetsAdmin/libs/flot/curvedLines.js"></script>
+    <script asp-append-version="true"  src="~/assetsAdmin/libs/chart-am4/core.js"></script>
+    <script asp-append-version="true"  src="~/assetsAdmin/libs/chart-am4/charts.js"></script>
+    <script asp-append-version="true"  src="~/assetsAdmin/libs/chart-am4/animated.js"></script>
+
+    <!-- Demo -->
+    <script asp-append-version="true"  src="~/assetsAdmin/js/demo.js"></script>
+    <script asp-append-version="true"  src="~/assetsAdmin/js/analytics.js"></script>
+    <script asp-append-version="true"  src="~/assetsAdmin/js/pages/dashboards_index.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

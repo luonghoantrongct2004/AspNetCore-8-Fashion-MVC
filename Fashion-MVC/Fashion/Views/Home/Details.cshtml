@@ -1,0 +1,445 @@
+﻿@model App_Web.Models.ViewModel.ProductViewModel
+@{
+    var userIdClaim = Context.User.Claims.FirstOrDefault(c => c.Type == "UserID");
+}
+<link rel="stylesheet" asp-append-version="true" href="~/assets/owlCarousel/assets/owl.theme.default.min.css">
+<link rel="stylesheet" asp-append-version="true" type="text/css" href="~/assets/css/product.css">
+<link rel="stylesheet" asp-append-version="true" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+
+<!-- Owl Slider css -->
+<link rel="stylesheet" asp-append-version="true" href="~/assets/owlCarousel/assets/owl.carousel.min.css">
+<link rel="stylesheet" asp-append-version="true" href="~/assets/owlCarousel/assets/owl.theme.default.min.css">
+<!-- Owl caroucel Js-->
+<script asp-append-version="true" src="~/assets/owlCarousel/owl.carousel.min.js"></script>
+<div class="grid wide">
+    <div class="productInfo">
+        <div class="row">
+            <div class="col l-5 m-12 s-12">
+                @if (Model.Product.Images != null)
+                {
+                    <div class="owl-carousel owl-theme" id="sync1">
+                        @foreach (var item in Model.Product.Images)
+                        {
+                            <a href="#" class="product">
+                                <div class="product__avt" style="padding-top: 0; ">
+                                    <img src="@Url.Content(item)" style="width:498px; height:498px;" />
+                                </div>
+                            </a>
+                        }
+                        </div>
+                    <div class="owl-carousel owl-theme" id="sync2">
+                        @foreach (var item in Model.Product.Images.Take(4))
+                        {
+                            <a href="#" class="product">
+                                <div class="product__avt" style="padding-top: 0; ">
+                                    <img src="@Url.Content(item)" style="height: 100.9px;width: 100.9px;" />
+                                </div>
+                            </a>
+                        }
+                        </div>
+                }
+
+            </div>
+            <div class="col l-7 m-12s s-12 pl">
+                <h3 class="productInfo__name">
+                    @Model.Product.ProductName
+                </h3>
+                @{
+                    decimal originalPrice = Model.Product.Price;
+                    int discountPercentage = Model.Product.Discount.HasValue ? Model.Product.Discount.Value : 0;
+                    decimal discountedPrice = originalPrice - (originalPrice * discountPercentage / 100);
+                }
+                <div class="productInfo__price">
+                    @discountedPrice.ToString("N0") <span class="priceInfo__unit">đ</span>
+                </div>
+                <div class="productInfo__description">
+                    <span>@Model.Product.Description</span>
+                </div>
+
+                <div class="productInfo__addToCart">
+                    <div class="buttons_added">
+                        <input class="minus is-form" type="button" value="-" onclick="minusProduct()">
+                        <input aria-label="quantity" class="input-qty" id="Quantity1" min="1" name="Quantity" type="number" value="1">
+                        <input class="plus is-form" type="button" value="+" onclick="plusProduct()">
+                    </div>
+                    @if (userIdClaim != null)
+                    {
+                        <div class="row" style="margin-top: 10px;">
+                            <form action="/Home/AddToCart" method="post" class="col-3">
+                                <div class="radio-input buttons_added" style="padding: 10px 0px 10px 0px;">
+                                    @foreach (var color in Model.Product.Color)
+                                    {
+                                        <input value="@color" name="Color" id="selectColor-@color" type="radio" />
+                                        <label for="selectColor-@color">@color</label>
+                                    }
+                                </div>
+                                <div class="radio-input buttons_added" style="padding: 10px 0px 10px 0px;">
+                                    @foreach (var size in Model.Product.Size)
+                                    {
+                                        <input value="@size" name="Size" id="selectSize-@size" type="radio" />
+                                        <label for="selectSize-@size">@size</label>
+                                    }
+                                </div>
+                                <div>
+                                    <input type="hidden" name="ProductId" value="@Model.Product.ProductId" />
+                                    <input type="hidden" name="Quantity" id="Quantity2" value="1" />
+                                    <input type="hidden" name="UserId" value="@userIdClaim.Value" />
+                                    <button type="submit" class="btn btn--default orange addToCart" style="text-transform: capitalize;">Thêm vào giỏ hàng</button>
+                                </div>
+                            </form>
+                            <form action="/Checkout/ProcessPayment" method="post" class="col-9" style="margin-top: 116px;padding-left: 5px;">
+                                <input type="hidden" name="ProductId" value="@Model.Product.ProductId" />
+                                <input type="hidden" name="Quantity" id="Quantity3" value="1" />
+                                <input type="hidden" name="Color" id="color" value="" />
+                                <input type="hidden" name="Size" id="size" value="" />
+                                <input type="hidden" name="UserId" value="@userIdClaim.Value" />
+                                <button type="submit" class="btn btn--default orange" style="text-transform: capitalize;">Thanh toán</button>
+                            </form>
+                        </div>
+                    }
+                    else
+                    {
+                        <a href="/login" class="btn btn--default orange addToCart" style="text-transform: capitalize;">Thêm vào giỏ hàng</a>
+                    }
+                </div>
+
+                <div class="productIndfo__policy ">
+                    <div class="policy bg-1 ">
+                        <img src="~/assets/img/policy/policy1.png " class="productIndfo__policy-img "></img>
+                        <div class="productIndfo__policy-info ">
+                            <h3 class="productIndfo__policy-title ">Giao hàng miễn phí</h3>
+                            <p class="productIndfo__policy-description ">Cho đơn hàng từ 300K</p>
+                        </div>
+                    </div>
+                    <div class="policy bg-2 ">
+                        <img src="~/assets/img/policy/policy2.png " class="productIndfo__policy-img "></img>
+                        <div class="productIndfo__policy-info ">
+                            <h3 class="productIndfo__policy-title ">Thanh toán</h3>
+                            <p class="productIndfo__policy-description "> trực tuyến</p>
+                        </div>
+                    </div>
+                    <div class="policy bg-1 ">
+                        <img src="~/assets/img/policy/policy3.png " class="productIndfo__policy-img "></img>
+                        <div class="productIndfo__policy-info ">
+                            <h3 class="productIndfo__policy-title ">Chất lượng xịn xò</h3>
+                            <p class="productIndfo__policy-description ">Được chứng nhận</p>
+                        </div>
+                    </div>
+                    <div class="policy bg-2 ">
+                        <img src="~/assets/img/policy/policy4.png " class="productIndfo__policy-img "></img>
+                        <div class="productIndfo__policy-info ">
+                            <h3 class="productIndfo__policy-title ">Hỗ trợ tận tay</h3>
+                            <p class="productIndfo__policy-description ">Không lo trong mình</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="productIndfo__category ">
+                    @if (@Model.Product.Category != null && @Model.Product.Brand != null)
+                    {
+                        <p class="productIndfo__category-text"> Danh mục : <a href="# " class="productIndfo__category-link ">@Model.Product.Category.CategoryName</a></p>
+                        <p class="productIndfo__category-text"> Hãng : <a href="# " class="productIndfo__category-link ">@Model.Product.Brand.BrandName</a></p>
+                    }
+                    <p class="productIndfo__category-text"> Số lượng đã bán : @(Model.Product.SoldQuantity ?? 0)</p>
+                    <p class="productIndfo__category-text"> Số lượng trong kho : @Model.Product.StockQuantity</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="productDetail ">
+        <div class="main__tabnine ">
+            <div class="grid wide ">
+                <!-- Tab items -->
+                <div class="tabs ">
+                    <div class="tab-item active ">
+                        Mô tả
+                    </div>
+                    <div class="tab-item ">
+                        Đánh giá
+                    </div>
+                    <div class="line "></div>
+                </div>
+                <!-- Tab content -->
+                <div class="tab-content ">
+                    <div class="tab-pane active ">
+                        <div class="productDes ">
+                            <div class="productDes__title ">@Model.Product.ProductName</div>
+                            <p class="productDes__text ">
+                                <a href="" class="productDes__link ">@Model.Product.ProductName </a>
+                                @Model.Product.Description
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-pane ">
+                        @if (Model.IsReceived && !Model.UserHasRated && User.Identity.IsAuthenticated)
+                        {
+                            <div class="productDes__ratting ">
+                                <form action="@Url.Action("AddComment", "Home")" method="post">
+                                    <div class="productDes__ratting-title ">Đánh giá của bạn</div>
+                                    <div class="productDes__ratting-wrap">
+                                        <div id="rating">
+                                            <input type="radio" id="star5" name="rating" value="5" />
+                                            <label class="full" for="star5" title="Awesome - 5 stars"></label>
+
+
+                                            <input type="radio" id="star4" name="rating" value="4" />
+                                            <label class="full" for="star4" title="Pretty good - 4 stars"></label>
+
+                                            <input type="radio" id="star3" name="rating" value="3" />
+                                            <label class="full" for="star3" title="Meh - 3 stars"></label>
+
+                                            <input type="radio" id="star2" name="rating" value="2" />
+                                            <label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+
+
+                                            <input type="radio" id="star1" name="rating" value="1" />
+                                            <label class="full" for="star1" title="Sucks big time - 1 star"></label>
+
+                                        </div>
+                                        <textarea style="background-color: whitesmoke;" class="ratecomment" name="commentContent" cols="30" rows="1" placeholder="Vui lòng viết đánh giá của bạn"></textarea>
+                                    </div>
+                                    <input type="hidden" name="productId" value="@Model.Product.ProductId" />
+                                    <input type="submit" class="btn btn--default" value="Đánh giá">
+                                </form>
+                            </div>
+                        }
+                        <ul class="rate__list">
+                            @if (Model.Product.Comments != null && Model.Product.Comments.Any())
+                            {
+                                @foreach (var item in Model.Product.Comments)
+                                {
+                                    <li class="rate__item">
+                                        <div class="rate__info">
+                                            <img src="~/user.jpg" alt="">
+                                            <h3 class="rate__user">@item.User.FullName</h3>
+                                            <div class="rate__star">
+                                                <div class="group-star">
+                                                    @for (int i = 0; i < (int)item.StarRating; i++)
+                                                    {
+                                                        <i class="fas fa-star"></i>
+                                                    }
+                                                    @if (item.StarRating % 1 != 0)
+                                                    {
+                                                        <i class="fas fa-star-half-alt"></i>
+                                                    }
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rate__comment">@item.Content</div>
+                                    </li>
+                                }
+                            }else{
+                                <p style="font-size: 12px;">Sản phẩm chưa có đánh giá</p>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main__frame ">
+        <div class="grid wide ">
+            <h3 class="category__title ">Canteen</h3>
+            <h3 class="category__heading ">Sản Phẩm Tương tự</h3>
+            <div class="owl-carousel hight owl-theme ">
+                @foreach (var item in Model.RelatedProducts)
+                {
+                    <a href="/Home/Details?id=@item.ProductId" class="product ">
+                            @if (item.Images != null)
+                            {
+                            <div class="product__avt " style="padding-top: 0; ">
+                                <img src="@item.Images.First()" style="width:181.3px; height:181.3px;" />
+                            </div>
+                            }
+                        <div class="product__info ">
+                            <h3 class="product__name ">@item.ProductName</h3>
+                            <div class="product__price ">
+                                <div class="price__old ">@item.Price.ToString("N0") <span class="price__unit ">đ</span></div>
+                                <div class="price__new ">@discountedPrice.ToString("N0") <span class="price__unit ">đ</span></div>
+                            </div>
+                        </div>
+                        <div class="product__sale ">
+                            @if (item.Discount > 0)
+                            {
+                                <div class="product__sale">
+                                    <span class="product__sale-percent">@item.Discount%</span>
+                                    <span class="product__sale-text">Giảm</span>
+                                </div>
+                            }
+                        </div>
+                    </a>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function updateColor(color) {
+        document.getElementById('color').value = color;
+    }
+
+    function updateSize(size) {
+        document.getElementById('size').value = size;
+    }
+
+    document.querySelectorAll('input[name="Color"]').forEach(input => {
+        input.addEventListener('change', function () {
+            document.getElementById('color').value = this.value;
+        });
+    });
+
+    document.querySelectorAll('input[name="Size"]').forEach(input => {
+        input.addEventListener('change', function () {
+            document.getElementById('size').value = this.value;
+        });
+    });
+</script>
+<script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "105913298384666");
+    chatbox.setAttribute("attribution", "biz_inbox");
+    window.fbAsyncInit = function () {
+        FB.init({
+            xfbml: true,
+            version: 'v10.0'
+        });
+    };
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+<script>
+    $(document).ready(function () {
+        var sync1 = $("#sync1 ");
+        var sync2 = $("#sync2 ");
+        var slidesPerPage = 4;
+        var syncedSecondary = true;
+        sync1.owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 20,
+            nav: true,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: true
+        })
+        sync2
+            .on('initialized.owl.carousel', function () {
+                sync2.find(".owl-item ").eq(0).addClass("current ");
+            })
+            .owlCarousel({
+                items: 4,
+                dots: false,
+                nav: false,
+                margin: 30,
+                smartSpeed: 200,
+                slideSpeed: 500,
+                slideBy: 4,
+                responsiveRefreshRate: 100
+            }).on('changed.owl.carousel', syncPosition2);
+
+        function syncPosition(el) {
+            var count = el.item.count - 1;
+            var current = Math.round(el.item.index - (el.item.count / 2) - .5);
+
+            if (current < 0) {
+                current = count;
+            }
+            if (current > count) {
+                current = 0;
+            }
+
+            //end block
+
+            sync2
+                .find(".owl-item ")
+                .removeClass("current ")
+                .eq(current)
+                .addClass("current ");
+            var onscreen = sync2.find('.owl-item.active').length - 1;
+            var start = sync2.find('.owl-item.active').first().index();
+            var end = sync2.find('.owl-item.active').last().index();
+
+            if (current > end) {
+                sync2.data('owl.carousel').to(current, 100, true);
+            }
+            if (current < start) {
+                sync2.data('owl.carousel').to(current - onscreen, 100, true);
+            }
+        }
+
+        function syncPosition2(el) {
+            if (syncedSecondary) {
+                var number = el.item.index;
+                sync1.data('owl.carousel').to(number, 100, true);
+            }
+        }
+
+        sync2.on("click ", ".owl-item ", function (e) {
+            e.preventDefault();
+            var number = $(this).index();
+            sync1.data('owl.carousel').to(number, 300, true);
+        });
+    });
+
+    $('.owl-carousel.hight').owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: true,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 2
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 6
+            }
+        }
+    })
+</script>
+
+<!-- Script common -->
+<script src="~/assets/js/commonscript.js ">
+</script>
+<script>
+    function calcRate(r) {
+        const f = ~~r, //Tương tự Math.floor(r)
+            id = 'star' + f + (r % f ? 'half' : '')
+        id && (document.getElementById(id).checked = !0)
+    }
+</script>
+<script>
+    function plusProduct() {
+        var quantity1 = document.getElementById('Quantity1');
+        var quantity2 = document.getElementById('Quantity2');
+        var quantity3 = document.getElementById('Quantity3');
+        quantity1.value = parseInt(quantity1.value) + 1;
+        quantity2.value = quantity1.value;
+        quantity3.value = quantity1.value;
+    }
+
+    function minusProduct() {
+        var quantity1 = document.getElementById('Quantity1');
+        var quantity2 = document.getElementById('Quantity2');
+        var quantity3 = document.getElementById('Quantity3');
+        if (parseInt(quantity1.value) > 1) {
+            quantity1.value = parseInt(quantity1.value) - 1;
+            quantity2.value = quantity1.value;
+            quantity3.value = quantity1.value;
+        }
+    }
+</script>
+

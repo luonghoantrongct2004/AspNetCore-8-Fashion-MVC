@@ -1,0 +1,218 @@
+﻿@model App_Web.Models.ViewModel.CheckoutViewModel
+
+@{
+    var userIdClaim = Context.User.Claims.FirstOrDefault(c => c.Type == "UserID").Value;
+}
+
+<link rel="stylesheet" type="text/css" href="~/assets/css/pay.css">
+<style>
+    .main__pay-amount::before {
+        content: "";
+        position: absolute;
+        right: 10px;
+    }
+
+    .form-control {
+        background: border-box;
+    }
+
+    .form-group{
+        height:87px;
+        width:680px;
+    }
+
+    textarea.form-control {
+        height: 80px;
+    }
+</style>
+
+<form id="checkout-form" action="/Checkout/Checkout" method="post">
+<div class="grid wide" style="margin-top: 130px;">
+    <div class="row">
+            <div class="col l-7 m-12 s-12">
+                <div class="pay-information">
+                    <div class="form-group">
+                        <label for="fullname" class="form-label">Họ Tên </label>
+                        <input id="fullname" name="Fullname" type="text" class="form-control" value="@ViewBag.Fullname" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email </label>
+                        <input id="email" name="Email" type="email" class="form-control" value="@ViewBag.Email" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="@Model.ShippingAddress" class="form-label">Địa chỉ giao hàng</label>
+                        <input id="address" asp-for="@Model.ShippingAddress" type="text" class="form-control" required>
+                        <span class="form-message">@Html.ValidationMessageFor(model => model.ShippingAddress)</span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="@Model.ContactPhone" class="form-label">Số điện thoại </label>
+                        <input id="phone" asp-for="@Model.ContactPhone" type="tel" class="form-control" required>
+                        <span class="form-message">@Html.ValidationMessageFor(model => model.ContactPhone)</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="note" class="form-label">Ghi chú cho đơn hàng</label>
+                        <textarea id="note" class="form-control" name="Note" cols="10" rows="5"></textarea>
+                    </div>
+                </div>
+            </div>
+        <div class="col l-5 m-12 s-12">
+            <div class="pay-order">
+                <div class="pay__heading">Đơn hàng của bạn</div>
+                    @if (Model.CartItems != null)
+                    {
+                        @foreach (var item in Model.CartItems)
+                        {
+                            <div class="pay-info">
+                                <div class="main__pay-text" style="text-wrap: pretty;width: 336px;">@item.Product.ProductName
+
+                                    <div class="main__pay-amount" style="white-space: nowrap;">@item.Color - @item.Size</div>
+                                </div>
+                                <div class="main__pay-amount" style="white-space: nowrap;">x @item.Quantity</div>
+                                <div class="main__pay-price">@item.Product.Price.ToString("N0") ₫</div>
+                            </div>
+                        }
+                        <div class="pay-info">
+                            <div class="main__pay-text special">Giao hàng</div>
+                            <div class="main__pay-text">Giao hàng miễn phí</div>
+                        </div>
+
+                        <div class="pay-info">
+                            <select class="form-control" name="PaymentType" style="background-color: aliceblue;">
+                                <option value="1">Thanh toán khi nhận hàng</option>
+                                <option value="2">Thanh toán bằng visa hoặc master card</option>
+                            </select>
+                        </div>
+                        <div class="pay-info">
+                            <div class="main__pay-text special">Tổng thành tiền</div>
+                            <div class="main__pay-price">@Model.TotalPrice.ToString("N0") ₫</div>
+                        </div>
+                        <input type="hidden" name="TotalPrice" value="@Model.TotalPrice" />
+                        <input type="hidden" name="UserId" value="@userIdClaim" />
+                        @for (int i = 0; i < Model.CartItems.Count; i++)
+                        {
+                            <input type="hidden" name="CartItems[@i].Quantity" value="@Model.CartItems[i].Quantity">
+                            <input type="hidden" name="CartItems[@i].UnitPrice" value="CartItems[@i].UnitPrice">
+                            <input type="hidden" name="CartItems[@i].ProductName" value="CartItems[@i].ProductName">
+                            <input type="hidden" name="CartItems[@i].ProductId" value="@Model.CartItems[i].ProductId">
+                            <input type="hidden" name="CartItems[@i].Color" value="CartItems[@i].Color">
+                            <input type="hidden" name="CartItems[@i].Size" value="@Model.CartItems[i].Size">
+                        }
+                    }
+                    else if (Model.ProductInfos != null)
+                    {
+                        @foreach (var item in Model.ProductInfos)
+                        {
+                            <div class="pay-info">
+                                <div class="main__pay-text">@item.ProductName
+                                    <div class="main__pay-amount" style="white-space: nowrap;">@item.Color - @item.Size</div>
+                                
+                                </div>
+                                <div class="main__pay-amount">x @item.Quantity</div>
+                                <div class="main__pay-price">@item.Price.ToString("N0") ₫</div>
+                            </div>
+                        } 
+                        <div class="pay-info">
+                            <div class="main__pay-text special">Giao hàng</div>
+                            <div class="main__pay-text">Giao hàng miễn phí</div>
+                        </div>
+
+                        <div class="pay-info">
+                            <select class="form-control" name="PaymentType" style="background-color: aliceblue;">
+                                <option value="1">Thanh toán khi nhận hàng</option>
+                                <option value="2">Thanh toán bằng visa hoặc master card</option>
+                            </select>
+                        </div>
+                        <div class="pay-info">
+                            <div class="main__pay-text special">Tổng thành tiền</div>
+                            <div class="main__pay-price">@Model.TotalPrice.ToString("N0") ₫</div>
+                        </div>
+                        <input type="hidden" name="TotalPrice" value="@Model.TotalPrice" />
+                        <input type="hidden" name="UserId" value="@userIdClaim" />
+                        @for (int i = 0; i < Model.ProductInfos.Count; i++)
+                        {
+                            <input type="hidden" name="ProductInfos[@i].Quantity" value="@Model.ProductInfos[i].Quantity">
+                            <input type="hidden" name="ProductInfos[@i].ProductId" value="@Model.ProductInfos[i].ProductId">
+                            <input type="hidden" name="ProductInfos[@i].ProductName" value="@Model.ProductInfos[i].ProductName">
+                            <input type="hidden" name="ProductInfos[@i].Color" value="@Model.ProductInfos[i].Color">
+                            <input type="hidden" name="ProductInfos[@i].Size" value="@Model.ProductInfos[i].Size">
+                        }
+                    }
+                    else{
+                        @foreach (var item in Model.Products)
+                        {
+                            <div class="pay-info">
+                                <div class="main__pay-text">@item.ProductName
+                                <div class="main__pay-amount" style="white-space: nowrap;">@Model.Color - @Model.Size</div>
+                                </div>
+                                <div class="main__pay-amount">x @Model.Quantity</div>
+                                <div class="main__pay-price">@item.Price.ToString("N0") ₫ giảm @item.Discount%</div>
+                            </div>
+                        }
+                        <div class="pay-info">
+                            <div class="main__pay-text special">Giao hàng</div>
+                            <div class="main__pay-text">Giao hàng miễn phí</div>
+                        </div>
+                        <div class="pay-info">
+                            <select class="form-control" name="PaymentType" style="background-color: aliceblue;">
+                                    <option value="1">Thanh toán khi nhận hàng</option>
+                                    <option value="2">Thanh toán bằng visa hoặc master card</option>
+                                </select>
+                        </div>
+                        <div class="pay-info">
+                            <div class="main__pay-text special">Tổng thành tiền</div>
+                            <div class="main__pay-price">@Model.TotalPrice.ToString("N0") ₫</div>
+                        </div>
+                        <input type="hidden" name="TotalPrice" value="@Model.TotalPrice" />
+                        <input type="hidden" name="UserId" value="@userIdClaim" />
+                        <input type="hidden" name="Color" value="@Model.Color" />
+                        <input type="hidden" name="Size" value="@Model.Size" />
+                        @for (int i = 0; i < Model.Products.Count; i++)
+                        {
+                            <input type="hidden" name="Quantity" value="@Model.Quantity">
+                            <input type="hidden" name="ProductId" value="@Model.ProductId">
+                        }
+                    }
+                    <button type="submit" class="btn btn--default">Đặt hàng</button>
+            </div>
+        </div>
+    </div>
+    </div>
+</form>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var form = document.getElementById('checkout-form');
+        var shippingAddressInput = document.getElementById('address');
+        var contactPhoneInput = document.getElementById('phone');
+
+        form.addEventListener('submit', function (event) {
+            var shippingAddressError = document.getElementById('shipping-address-error');
+            var contactPhoneError = document.getElementById('contact-phone-error');
+
+            // Kiểm tra các thông báo lỗi
+            if (shippingAddressError.textContent || contactPhoneError.textContent) {
+                // Nếu có lỗi, ngăn chặn việc submit và hiển thị thông báo
+                event.preventDefault();
+                alert('Vui lòng điền đầy đủ thông tin và sửa các lỗi trước khi gửi.');
+            }
+        });
+
+        shippingAddressInput.addEventListener('blur', function () {
+            var shippingAddressError = document.getElementById('shipping-address-error');
+            if (shippingAddressInput.value.trim() === '') {
+                shippingAddressError.textContent = 'Vui lòng nhập địa chỉ giao hàng.';
+            } else {
+                shippingAddressError.textContent = '';
+            }
+        });
+
+        contactPhoneInput.addEventListener('blur', function () {
+            var contactPhoneError = document.getElementById('contact-phone-error');
+            if (contactPhoneInput.value.trim() === '') {
+                contactPhoneError.textContent = 'Vui lòng nhập số điện thoại.';
+            } else {
+                contactPhoneError.textContent = '';
+            }
+        });
+    });
+
+</script>

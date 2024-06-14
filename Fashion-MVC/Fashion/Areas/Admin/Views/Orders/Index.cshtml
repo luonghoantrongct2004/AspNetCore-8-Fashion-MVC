@@ -1,0 +1,56 @@
+﻿@model IEnumerable<App_Web.Models.Order>
+
+@{
+    ViewData["Title"] = "Danh sách Đơn hàng";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1 class="p-2">Danh sách Đơn hàng</h1>
+
+<table class="table table-striped" style="overflow-x: auto;">
+    <thead>
+        <tr>
+            <th scope="col">Ngày đặt hàng</th>
+            <th scope="col">Sản phẩm</th>
+            <th scope="col">Số lượng</th>
+            <th scope="col">Khách hàng</th>
+            <th scope="col">Trạng thái</th>
+            <th scope="col">Địa chỉ giao hàng</th>
+            <th scope="col">Tổng giá</th>
+            <th scope="col">Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.OrderDate)</td>
+                <td>
+                    @foreach (var orderDetail in item.OrderDetails)
+                    {
+                        <div style="text-wrap: pretty;width: 336px;">@orderDetail.Product?.ProductName <p>@orderDetail.Color - @orderDetail.Size</p></div>
+                    }
+                </td>
+                <td>
+                    @foreach (var orderDetail in item.OrderDetails)
+                    {
+                        <div>@orderDetail.Quantity</div>
+                    }
+                </td>
+                <td>@Html.DisplayFor(modelItem => item.User.Email)</td>
+                <td>@Html.DisplayFor(modelItem => item.Status)</td>
+                <td>@Html.DisplayFor(modelItem => item.ShippingAddress)</td>
+                <td>@Html.DisplayFor(modelItem => item.TotalPrice)</td>
+                <td>
+                    <div class="flex-column">
+                    <a href="/Admin/Orders/Details?id=@item.OrderId" class="btn btn-info">Chi tiết</a>
+                        @if (!item.Status.Equals("Đã nhận hàng") && !item.Status.Equals("Đã xác nhận") && !item.Status.Equals("Đã hủy hàng"))
+                        {
+                            <a href="/Admin/Orders/Confirm?id=@item.OrderId" class="btn btn-success">Xác nhận</a>
+                        }
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

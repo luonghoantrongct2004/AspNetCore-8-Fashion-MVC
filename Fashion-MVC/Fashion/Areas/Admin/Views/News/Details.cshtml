@@ -1,0 +1,43 @@
+﻿@model App_Web.Models.News
+
+@{
+    ViewData["Title"] = "Chi tiết tin tức";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1 class="p-2">Chi tiết tin tức</h1>
+
+<div class="table-responsive">
+    <table class="table table-striped table-condensed">
+        <tbody>
+            <tr>
+                <th class="text-center">Tiêu đề</th>
+                <td class="text-center">@Html.DisplayFor(model => model.Title)</td>
+            </tr>
+            <tr>
+                <th class="text-center">Nội dung</th>
+                <td class="text-center">@Html.DisplayFor(model => model.Content)</td>
+            </tr>
+            <tr>
+                <th class="text-center">Ảnh</th>
+                <td class="text-center"><img src="@Model.Image.First()" width="100px" height="70px" /></td>
+            </tr>
+            <tr>
+                <th class="text-center">Người đăng</th>
+                <td class="text-center">@Html.DisplayFor(model => model.Author)</td>
+            </tr>
+            <tr>
+                <th class="text-center">Ngày xuất bản</th>
+                <td class="text-center">@Html.DisplayFor(model => model.PublishedAt)</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="text-center d-flex align-middle justify-content-center">
+        <a href="/Admin/News/Edit?id=@Model.Id" class="btn btn-secondary">Chỉnh sửa</a>
+        <form method="post" action="/Admin/News/Delete" onsubmit="return confirm('Bạn có chắc chắn muốn xóa tin tức này?');">
+            <input type="hidden" name="id" value="@Model.Id" />
+            <button type="submit" class="btn btn-danger">Xóa</button>
+        </form>
+        <a href="/Admin/News/Index" class="btn btn-info">Quay lại danh sách</a>
+    </div>
+</div>
