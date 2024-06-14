@@ -1,1 +1,1 @@
-By Hoàn Trọng
+Hoàn Trọng
